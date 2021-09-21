@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Typography } from "@mui/material";
+import { CssBaseline, Typography } from "@mui/material";
 import Aos from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 /* background: `rgb(135,22,22)`,
 background: `linear-gradient(180deg, rgba(135,22,22,1) 0%, rgba(116,24,24,1) 35%, rgba(79,18,18,1) 100%)`; */
@@ -42,10 +42,12 @@ const Experience = () => {
         background: "rgb(3,19,73)",
         background:
           "linear-gradient(180deg, rgba(3,19,73,1) 0%, rgba(3,30,57,1) 35%, rgba(1,8,40,1) 100%)",
+        overflow: "hidden",
+        height: "100%",
       }}
       id="timeline"
     >
-      <Typography data-aos="fade" variant="h4" className="headings">
+      <Typography variant="h4" className="headings">
         TIMELINE
       </Typography>
 

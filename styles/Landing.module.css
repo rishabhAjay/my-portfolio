@@ -38,14 +38,14 @@
 }
 
 .buttons {
-  color: white !important;
-  border: 2px solid whitesmoke !important;
-  margin: 3rem 0.5rem -1rem 0.5rem !important;
-  font-size: 1.2rem !important;
-  font-family: "Comfortaa", cursive !important;
-  font-weight: 700 !important;
-  border-radius: 25px !important;
-  padding-top: 10px !important;
+  color: white;
+  border: 2px solid whitesmoke;
+  margin: 2% 0.5rem 2% 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  border-radius: 25px;
+  padding-top: 10px;
 }
 
 .buttons:hover {

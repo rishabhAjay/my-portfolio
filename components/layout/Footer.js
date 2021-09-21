@@ -52,17 +52,11 @@ const Footer = () => {
         </Stack>
       </div>
       <div style={{ color: "white", textAlign: "center" }}>
-        <Typography
-          data-aos="fade"
-          variant="body"
-          align="center"
-          component="div"
-        >
+        <Typography variant="body" align="center" component="div">
           Made with Next.js & Material UI
         </Typography>
 
         <a
-          data-aos="fade"
           href="https://unsplash.com/photos/Q1p7bh3SHj8"
           style={{ color: "white", fontSize: "0.8rem" }}
           rel="noreferrer"
@@ -72,7 +66,6 @@ const Footer = () => {
         </a>
         <Typography
           style={{ paddingBottom: "15px" }}
-          data-aos="fade"
           className="bodyFont"
           variant="body2"
           align="center"

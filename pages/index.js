@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Box } from "@mui/system";
 
 import Button from "@mui/material/Button";
-import { Typography, Avatar } from "@mui/material";
+import { Typography, Avatar, CssBaseline } from "@mui/material";
 import Zoom from "@mui/material/Fade";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -109,7 +109,9 @@ export default function Home() {
             </a>
           </Box>
 
+          <CssBaseline />
           <Experience />
+
           <Skills />
           <Project />
           <ContactMe />

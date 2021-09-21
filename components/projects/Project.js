@@ -31,7 +31,7 @@ const Project = (props) => {
         "A CRUD application that allows clinic staff members to add, delete, update and view patient Details. ",
       techs: ["Node.js", "Express", "EJS", "MySQL"],
       link: "https://github.com/rishabhAjay/patient-record-maintenance",
-      image: "regis.png",
+      image: "/registration.png",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Project = (props) => {
         "A computer graphics project that simulates the working of a Circular Queue. ",
       techs: ["OpenGL", "GLUT"],
       link: "https://github.com/rishabhAjay/circularBufferOpenGL",
-      image: "queue.png",
+      image: "/queue.png",
     },
   ]);
 
