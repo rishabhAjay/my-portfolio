@@ -1,16 +1,53 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+.bodyFont {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 400;
+}
+.headings {
+  color: white;
+  padding: 1rem 0 2rem 0;
+  margin-left: 40px;
+  text-decoration: underline;
+  padding-top: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 400;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.rec.rec-arrow {
+  background-color: cornsilk;
+  color: black;
+}
+.rec.rec-arrow:hover {
+  color: white;
+  background-color: inherit !important;
+  border: 2px solid white !important;
+}
+.rec.rec-arrow:disabled {
+  visibility: hidden;
 }
 
-* {
-  box-sizing: border-box;
+.rec.rec-dot {
+  background-color: white !important;
+}
+.rec.rec-dot:hover:active {
+  box-shadow: 0 0 1px 2px white !important;
+  border: white !important;
+}
+
+.contactBtn {
+  margin: 0 auto;
+  display: flex;
+  background-color: #1b70f7;
+  color: white;
+  margin-bottom: -10px;
+}
+
+.contactBtn:hover {
+  background-color: #1b70f7;
+  opacity: 0.8;
+}
+
+.footerIcons:hover {
+  opacity: 0.9;
 }

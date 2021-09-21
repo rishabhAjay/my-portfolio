@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+
+.landingImage {
+  background-image: url("../public/landingImage3.jpg");
+  height: 36rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  margin-top: -2rem;
+}
+
+.landingText {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  text-shadow: 2px 2px #787878;
+}
+
+.landingTextSec {
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  text-shadow: 2px 2px #787878;
+}
+
+.avatar {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  color: white;
+  border: 2px solid whitesmoke;
+  margin: 3rem 0.5rem -1rem 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  border-radius: 25px;
+  padding-top: 10px;
+}
+
+.buttons:hover {
+  border: 2px solid whitesmoke;
+  opacity: 0.9;
+}
