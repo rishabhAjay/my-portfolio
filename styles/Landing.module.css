@@ -2,20 +2,20 @@
 
 .landingImage {
   background-image: url("../public/landingImage3.jpg");
-  height: 36rem;
+  height: 36rem !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
-  margin-top: -2rem;
+  margin-top: -2rem !important;
 }
 
 .landingText {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2rem !important;
   font-family: "Comfortaa", cursive !important;
   font-weight: 700 !important;
   text-shadow: 2px 2px #787878;
@@ -23,11 +23,11 @@
 
 .landingTextSec {
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   text-align: center;
-  padding-top: 1rem;
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
+  padding-top: 1rem !important;
+  font-family: "Comfortaa", cursive !important;
+  font-weight: 700 !important;
   text-shadow: 2px 2px #787878;
 }
 
