@@ -5,13 +5,13 @@
   font-weight: 400;
 }
 .headings {
-  color: white;
-  padding: 1rem 0 2rem 0;
-  margin-left: 40px;
+  color: white !important;
+  padding: 1rem 0 2rem 0 !important;
+  margin-left: 40px !important;
   text-decoration: underline;
-  padding-top: 30px;
-  font-family: "Balsamiq Sans", cursive;
-  font-weight: 400;
+  padding-top: 30px !important;
+  font-family: "Balsamiq Sans", cursive !important;
+  font-weight: 400 !important;
 }
 
 .rec.rec-arrow {
@@ -36,16 +36,16 @@
 }
 
 .contactBtn {
-  margin: 0 auto;
-  display: flex;
-  background-color: #1b70f7;
-  color: white;
-  margin-bottom: -10px;
+  margin: 0 auto !important;
+  display: flex !important;
+  background-color: #1b70f7 !important;
+  color: white !important;
+  margin-bottom: -10px !important;
 }
 
 .contactBtn:hover {
-  background-color: #1b70f7;
-  opacity: 0.8;
+  background-color: #1b70f7 !important;
+  opacity: 0.8 !important;
 }
 
 .footerIcons:hover {
