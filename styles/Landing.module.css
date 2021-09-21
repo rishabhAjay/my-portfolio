@@ -16,8 +16,8 @@
   font-size: 2.5rem;
   text-align: center;
   padding-top: 2rem;
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
+  font-family: "Comfortaa", cursive !important;
+  font-weight: 700 !important;
   text-shadow: 2px 2px #787878;
 }
 
@@ -40,7 +40,7 @@
 .buttons {
   color: white !important;
   border: 2px solid whitesmoke !important;
-  margin: 2% 0.5rem 2% 0.5rem !important;
+  margin: 3% 0.5rem 0 0.5rem !important;
   font-size: 0.8rem !important;
   font-family: "Comfortaa", cursive !important;
   font-weight: 700 !important;
