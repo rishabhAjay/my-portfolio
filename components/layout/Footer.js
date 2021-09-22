@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { CssBaseline, Typography, Stack, Link } from "@mui/material";
-import MuiAlert from "@mui/material/Alert";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import CopyrightIcon from "@mui/icons-material/Copyright";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const Footer = () => {
   return (
     <div

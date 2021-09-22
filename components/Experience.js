@@ -4,9 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { CssBaseline, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Aos from "aos";
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 /* background: `rgb(135,22,22)`,
 background: `linear-gradient(180deg, rgba(135,22,22,1) 0%, rgba(116,24,24,1) 35%, rgba(79,18,18,1) 100%)`; */
@@ -89,6 +89,9 @@ const Experience = () => {
             </VerticalTimelineElement>
           )
         )}
+        <VerticalTimelineElement
+          iconStyle={{ background: "#0e5408", color: "#fff" }}
+        />
       </VerticalTimeline>
     </div>
   );

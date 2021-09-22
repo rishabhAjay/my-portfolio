@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-
+import dynamic from "next/dynamic";
 import { Box } from "@mui/system";
 
 import Button from "@mui/material/Button";
@@ -13,13 +13,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 
-import Spinner from "../components/layout/Spinner.js";
-import Navbar from "../components/layout/Navbar.js";
-import Experience from "../components/Experience.js";
-import Skills from "../components/Skills.js";
-import Project from "../components/projects/Project.js";
-import ContactMe from "../components/ContactMe";
-import Footer from "../components/layout/Footer";
+const Spinner = dynamic(import("../components/layout/Spinner.js"));
+const Navbar = dynamic(import("../components/layout/Navbar.js"));
+const Experience = dynamic(import("../components/Experience.js"));
+const Skills = dynamic(import("../components/Skills.js"));
+const Project = dynamic(import("../components/projects/Project.js"));
+const ContactMe = dynamic(import("../components/ContactMe"));
+const Footer = dynamic(import("../components/layout/Footer"));
 
 import styles from "../styles/Landing.module.css";
 /*Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/coding-dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
