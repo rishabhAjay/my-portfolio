@@ -47,10 +47,7 @@ const Home = () => {
           content="A portfolio website built with Next.js and Material UI"
         />
 
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/1m1Hx98/Logopit-1632309910245.jpg"
-        />
+        <meta property="og:image" content="/favicon.png" />
 
         <meta property="og:site_name" content="Rishabh Ajay's Homepage" />
         <link rel="icon" href="/favicon.png" />
