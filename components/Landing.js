@@ -44,7 +44,7 @@ const Landing = () => {
       </Typography>
       <a
         style={{ textDecoration: "none" }}
-        href="https://drive.google.com/file/d/1bw8Wc5NaCXDJk7IKIvzcJDEATzMCbiw4/view?usp=sharing/"
+        href="https://drive.google.com/file/d/1PvW_kq_KOuMpRxiGkgODQ4ktQ9kUqE_q/view?usp=sharing"
         rel="noreferrer"
         target="_blank"
       >
