@@ -22,7 +22,7 @@ const Landing = () => {
           data-aos-easing="ease-out"
           sx={{ width: "8.5rem", height: "8.5rem" }}
           alt="Rishabh Ajay"
-          src="/avatar.png"
+          src="/avatar.webp"
         />
         {/* </Zoom> */}
       </div>
