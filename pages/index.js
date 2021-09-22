@@ -21,11 +21,11 @@ const Home = () => {
   const [loading, setLoading] = useState(null);
   const [display, setDisplay] = useState(null);
   useEffect(() => {
-    setDisplay("none");
     setLoading(true);
+    setDisplay("none");
     setTimeout(() => {
-      setLoading(false);
       setDisplay("");
+      setLoading(false);
     }, 5000);
   }, []);
 
