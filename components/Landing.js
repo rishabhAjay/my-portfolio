@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
 import { Box } from "@mui/system";
-
+import Image from "next/image";
 import Button from "@mui/material/Button";
-import { Typography, Avatar, CssBaseline } from "@mui/material";
+import { Typography, Avatar } from "@mui/material";
 import Zoom from "@mui/material/Fade";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 
@@ -18,12 +16,14 @@ const Landing = () => {
     <Box className={styles.landingImage}>
       <div data-aos="fade" className={styles.avatar}>
         {/* <Zoom in="true" style={{ transitionDelay: "300ms" }}> */}
-        <Avatar
-          data-aos-easing="ease-out"
-          sx={{ width: "8.5rem", height: "8.5rem" }}
-          alt="Rishabh Ajay"
-          src="/avatar.png"
-        />
+        <Avatar sx={{ width: 130, height: 130 }}>
+          <Image
+            data-aos-easing="ease-out"
+            alt="Rishabh Ajay"
+            src="/avatar.webp"
+            layout="fill"
+          />
+        </Avatar>
         {/* </Zoom> */}
       </div>
 

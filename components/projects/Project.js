@@ -14,7 +14,7 @@ const Project = (props) => {
         "A location tracker based on JavaScript's Geolocation API that takes touch sensing as an input. ",
       techs: ["Bolt API", "Node.js", "Express"],
       link: "https://github.com/rishabhAjay/bolt-iot-location-tracker",
-      image: "/iot3.jpg",
+      image: "/iot3.webp",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Project = (props) => {
         "An E-commerce website primarily involving the Frontend design and functionalities. Has a Login/Register system. ",
       techs: ["Bootstrap", "Node.js", "Express", "MongoDB"],
       link: "https://github.com/rishabhAjay/exceptionalHandlersIC",
-      image: "/cart.png",
+      image: "/cart.webp",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Project = (props) => {
         "A CRUD application that allows clinic staff members to add, delete, update and view patient Details. ",
       techs: ["Node.js", "Express", "EJS", "MySQL"],
       link: "https://github.com/rishabhAjay/patient-record-maintenance",
-      image: "/registration.png",
+      image: "/registration.webp",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const Project = (props) => {
         "A computer graphics project that simulates the working of a Circular Queue. ",
       techs: ["OpenGL", "GLUT"],
       link: "https://github.com/rishabhAjay/circularBufferOpenGL",
-      image: "/queue.png",
+      image: "/queue.webp",
     },
   ]);
 

@@ -27,7 +27,7 @@ const ContactMe = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     try {
-      const res = await emailjs.sendForm(
+      await emailjs.sendForm(
         "gmail",
         "gmail_template_1",
         form.current,

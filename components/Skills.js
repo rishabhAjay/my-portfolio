@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Card,
   Grid,
@@ -10,32 +11,32 @@ import {
 const Skills = () => {
   const [itemData, setItemData] = useState([
     {
-      img: "/mongodb.png",
+      img: "/mongodb.webp",
       title: "MongoDB",
       link: "https://www.mongodb.com/",
     },
     {
-      img: "/express.png",
+      img: "/express.webp",
       title: "Express.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/react.png",
+      img: "/react.webp",
       title: "React.js",
       link: "https://reactjs.org/",
     },
     {
-      img: "/node.png",
+      img: "/node.webp",
       title: "Node.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/git.png",
+      img: "/git.webp",
       title: "Git",
       link: "https://git-scm.com/",
     },
     {
-      img: "/python.png",
+      img: "/python.webp",
       title: "Python",
       link: "https://www.python.org/",
     },
@@ -78,14 +79,17 @@ const Skills = () => {
                     href={item.link}
                   >
                     <CardMedia
-                      style={{
-                        objectFit: "contain",
-                      }}
-                      component="img"
-                      height="100"
-                      image={item.img}
-                      alt="green iguana"
-                    />
+                      title={item.title}
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
+                      <Image
+                        src={item.img}
+                        width={120}
+                        height={120}
+                        objectFit="cover"
+                        alt={item.title}
+                      />
+                    </CardMedia>
 
                     <Typography
                       className="bodyFont"
