@@ -18,9 +18,8 @@ const ContactMe = dynamic(import("../components/ContactMe"));
 const Footer = dynamic(import("../components/layout/Footer"));
 
 const Home = () => {
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 5000);
