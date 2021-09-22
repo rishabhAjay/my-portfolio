@@ -25,7 +25,7 @@ const Home = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setDisplay(null);
+      setDisplay("");
     }, 5000);
   }, []);
 
@@ -59,7 +59,7 @@ const Home = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <div display={display}>
+        <div style={{ display: { display } }}>
           <Navbar />
           <Landing />
           <CssBaseline />
