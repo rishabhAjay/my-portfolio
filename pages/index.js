@@ -8,7 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 
-const Spinner = dynamic(import("../components/layout/Spinner.js"));
+// const Spinner = dynamic(import("../components/layout/Spinner.js"));
 const Navbar = dynamic(import("../components/layout/Navbar.js"));
 const Landing = dynamic(import("../components/Landing.js"));
 const Experience = dynamic(import("../components/Experience.js"));
@@ -18,13 +18,13 @@ const ContactMe = dynamic(import("../components/ContactMe"));
 const Footer = dynamic(import("../components/layout/Footer"));
 
 const Home = () => {
-  const [loading, setLoading] = useState(null);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+  // const [loading, setLoading] = useState(null);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
+  // }, []);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -35,20 +35,17 @@ const Home = () => {
       <Head>
         <title>Rishabh Ajay | Portfolio</title>
       </Head>
-      {loading ? (
-        <Spinner />
-      ) : (
-        <>
-          <Navbar />
-          <Landing />
-          <CssBaseline />
-          <Experience />
-          <Skills />
-          <Project />
-          <ContactMe />
-          <Footer />
-        </>
-      )}
+
+      <>
+        <Navbar />
+        <Landing />
+        <CssBaseline />
+        <Experience />
+        <Skills />
+        <Project />
+        <ContactMe />
+        <Footer />
+      </>
     </>
   );
 };

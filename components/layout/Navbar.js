@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <CssBaseline />
-      <AppBar position="fixed" className={styles.navbarStyles}>
+      <AppBar position="absolute" className={styles.navbarStyles}>
         <Toolbar>
           <Link passHref={true} href="/">
             <Typography

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import dynamic from "next/dynamic";
 import {
   Box,
   Card,
@@ -11,7 +12,7 @@ import {
 
 import emailjs from "emailjs-com";
 
-import Notif from "./layout/Notif";
+const Notif = dynamic(import("./layout/Notif"));
 
 const ContactMe = () => {
   const [open, setOpen] = useState(false);
@@ -32,12 +33,11 @@ const ContactMe = () => {
         form.current,
         "user_bOO0ZiXPVubItFZHXNlPB"
       );
-      console.log(res.text);
+
       e.target.reset();
       setOpen(true);
       setError(false);
     } catch (error) {
-      console.log(error.text);
       e.target.reset();
       setOpen(true);
       setError(true);
