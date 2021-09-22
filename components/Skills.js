@@ -10,32 +10,32 @@ import {
 const Skills = () => {
   const [itemData, setItemData] = useState([
     {
-      img: "/mongodb.webp",
+      img: "/mongodb.png",
       title: "MongoDB",
       link: "https://www.mongodb.com/",
     },
     {
-      img: "/express.webp",
+      img: "/express.png",
       title: "Express.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/react.webp",
+      img: "/react.png",
       title: "React.js",
       link: "https://reactjs.org/",
     },
     {
-      img: "/node.webp",
+      img: "/node.png",
       title: "Node.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/git.webp",
+      img: "/git.png",
       title: "Git",
       link: "https://git-scm.com/",
     },
     {
-      img: "/python.webp",
+      img: "/python.png",
       title: "Python",
       link: "https://www.python.org/",
     },
