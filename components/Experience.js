@@ -44,56 +44,56 @@ const Experience = () => {
           "linear-gradient(180deg, rgba(3,19,73,1) 0%, rgba(3,30,57,1) 35%, rgba(1,8,40,1) 100%)",
         overflow: "hidden",
         height: "100%",
-        padding: "0 1rem 0 1rem",
       }}
       id="timeline"
     >
       <Typography variant="h4" className="headings">
         TIMELINE
       </Typography>
-
-      <VerticalTimeline>
-        {timelines.map((timeline, i) =>
-          i % 2 === 0 ? (
-            <VerticalTimelineElement
-              key={i}
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "#086373", color: "#fff" }}
-              contentArrowStyle={{ borderRight: "7px solid white" }}
-              date={timeline.date}
-              iconStyle={{ background: "#086373", color: "#fff" }}
-            >
-              <h3 className="vertical-timeline-element-title">
-                {timeline.title}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {timeline.location}
-              </h4>
-              <p>{timeline.designation}</p>
-            </VerticalTimelineElement>
-          ) : (
-            <VerticalTimelineElement
-              key={i}
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: "#c9a30c", color: "#fff" }}
-              date={timeline.date}
-              iconStyle={{ background: "#c9a30c", color: "#fff" }}
-            >
-              <h3 className="vertical-timeline-element-title">
-                {" "}
-                {timeline.title}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {timeline.location}
-              </h4>
-              <p>{timeline.designation}</p>
-            </VerticalTimelineElement>
-          )
-        )}
-        <VerticalTimelineElement
-          iconStyle={{ background: "#a30707", color: "#fff" }}
-        />
-      </VerticalTimeline>
+      <div style={{ padding: "0 1rem 0 1rem" }}>
+        <VerticalTimeline>
+          {timelines.map((timeline, i) =>
+            i % 2 === 0 ? (
+              <VerticalTimelineElement
+                key={i}
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "#086373", color: "#fff" }}
+                contentArrowStyle={{ borderRight: "7px solid white" }}
+                date={timeline.date}
+                iconStyle={{ background: "#086373", color: "#fff" }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  {timeline.title}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {timeline.location}
+                </h4>
+                <p>{timeline.designation}</p>
+              </VerticalTimelineElement>
+            ) : (
+              <VerticalTimelineElement
+                key={i}
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "#c9a30c", color: "#fff" }}
+                date={timeline.date}
+                iconStyle={{ background: "#c9a30c", color: "#fff" }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  {" "}
+                  {timeline.title}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {timeline.location}
+                </h4>
+                <p>{timeline.designation}</p>
+              </VerticalTimelineElement>
+            )
+          )}
+          <VerticalTimelineElement
+            iconStyle={{ background: "#a30707", color: "#fff" }}
+          />
+        </VerticalTimeline>
+      </div>
     </div>
   );
 };
