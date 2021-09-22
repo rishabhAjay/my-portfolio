@@ -44,6 +44,7 @@ const Experience = () => {
           "linear-gradient(180deg, rgba(3,19,73,1) 0%, rgba(3,30,57,1) 35%, rgba(1,8,40,1) 100%)",
         overflow: "hidden",
         height: "100%",
+        padding: "0 1rem 0 1rem",
       }}
       id="timeline"
     >
