@@ -36,14 +36,14 @@ const Footer = () => {
           <Link
             rel="noreferrer"
             style={{ color: "white" }}
-            href="https://www.linkedin.com/in/rishabhajay/"
+            href="https://github.com/rishabhAjay"
             target="_blank"
           >
             <LinkedInIcon className="footerIcons" />
           </Link>
 
           <Link
-            href="mailto: rishabhajay24@gmail.com"
+            href="mailto: abc@gmail.com"
             style={{ color: "white" }}
           >
             <EmailIcon className="footerIcons" />
