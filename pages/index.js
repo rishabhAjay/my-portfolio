@@ -48,11 +48,12 @@ const Home = () => {
         />
 
         <meta
-          property="og:image"
-          content="https://drive.google.com/file/d/1AU1udwocamsxgk7fnJHPGUj488w6WO-I/view?usp=sharing"
+          property="linkedin:image"
+          content="https://i.ibb.co/1m1Hx98/Logopit-1632309910245.jpg"
         />
 
         <meta property="og:site_name" content="Rishabh Ajay's Homepage" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <>
