@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import dynamic from "next/dynamic";
 import { Typography } from "@mui/material";
 import Carousel from "react-elastic-carousel";

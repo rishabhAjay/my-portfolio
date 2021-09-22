@@ -57,10 +57,10 @@ const Experience = () => {
             <VerticalTimelineElement
               key={i}
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#003dc2", color: "#fff" }}
+              contentStyle={{ background: "#086373", color: "#fff" }}
               contentArrowStyle={{ borderRight: "7px solid white" }}
               date={timeline.date}
-              iconStyle={{ background: "#003dc2", color: "#fff" }}
+              iconStyle={{ background: "#086373", color: "#fff" }}
             >
               <h3 className="vertical-timeline-element-title">
                 {timeline.title}
@@ -74,9 +74,9 @@ const Experience = () => {
             <VerticalTimelineElement
               key={i}
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "#9e0507", color: "#fff" }}
+              contentStyle={{ background: "#c9a30c", color: "#fff" }}
               date={timeline.date}
-              iconStyle={{ background: "#9e0507", color: "#fff" }}
+              iconStyle={{ background: "#c9a30c", color: "#fff" }}
             >
               <h3 className="vertical-timeline-element-title">
                 {" "}
@@ -90,7 +90,7 @@ const Experience = () => {
           )
         )}
         <VerticalTimelineElement
-          iconStyle={{ background: "#0e5408", color: "#fff" }}
+          iconStyle={{ background: "#a30707", color: "#fff" }}
         />
       </VerticalTimeline>
     </div>

@@ -12,26 +12,32 @@ const Skills = () => {
     {
       img: "/mongodb.png",
       title: "MongoDB",
+      link: "https://www.mongodb.com/",
     },
     {
       img: "/express.png",
       title: "Express.js",
+      link: "https://expressjs.com/",
     },
     {
       img: "/react.png",
       title: "React.js",
+      link: "https://reactjs.org/",
     },
     {
       img: "/node.png",
       title: "Node.js",
+      link: "https://expressjs.com/",
     },
     {
       img: "/git.png",
       title: "Git",
+      link: "https://git-scm.com/",
     },
     {
       img: "/python.png",
       title: "Python",
+      link: "https://www.python.org/",
     },
   ]);
   return (
@@ -64,24 +70,32 @@ const Skills = () => {
                   boxShadow: "none",
                 }}
               >
-                <CardActionArea>
-                  <CardMedia
-                    style={{
-                      objectFit: "contain",
-                    }}
-                    component="img"
-                    height="100"
-                    image={item.img}
-                    alt="green iguana"
-                  />
+                <CardActionArea className="cardAction">
+                  <a
+                    style={{ textDecoration: "none" }}
+                    rel="noreferrer"
+                    target="_blank"
+                    href={item.link}
+                  >
+                    <CardMedia
+                      style={{
+                        objectFit: "contain",
+                      }}
+                      component="img"
+                      height="100"
+                      image={item.img}
+                      alt="green iguana"
+                    />
+
+                    <Typography
+                      className="bodyFont"
+                      variant="h6"
+                      style={{ textAlign: "center", color: "white" }}
+                    >
+                      {item.title}
+                    </Typography>
+                  </a>
                 </CardActionArea>
-                <Typography
-                  className="bodyFont"
-                  variant="h6"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  {item.title}
-                </Typography>
               </Card>
             </Grid>
           ))}

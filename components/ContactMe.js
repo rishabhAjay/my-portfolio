@@ -2,55 +2,48 @@ import React, { useState, useRef } from "react";
 import {
   Box,
   Card,
-  Snackbar,
   CardActions,
   CardContent,
   Button,
   Typography,
   TextField,
 } from "@mui/material";
-import MuiAlert from "@mui/material/Alert";
+
 import emailjs from "emailjs-com";
+
+import Notif from "./layout/Notif";
 
 const ContactMe = () => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(null);
   const form = useRef();
-
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
     setOpen(false);
   };
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
+    try {
+      const res = await emailjs.sendForm(
         "gmail",
         "gmail_template_1",
         form.current,
         "user_bOO0ZiXPVubItFZHXNlPB"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          setOpen(true);
-          setError(false);
-        },
-        (error) => {
-          console.log(error.text);
-          e.target.reset();
-          setOpen(true);
-          setError(true);
-        }
       );
+      console.log(res.text);
+      e.target.reset();
+      setOpen(true);
+      setError(false);
+    } catch (error) {
+      console.log(error.text);
+      e.target.reset();
+      setOpen(true);
+      setError(true);
+    }
   };
-  const Alert = React.forwardRef(function Alert(props, ref) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-  });
+
   return (
     <>
       <div
@@ -124,22 +117,20 @@ const ContactMe = () => {
         </div>
       </div>
       {open === true && error === false && (
-        <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
-          <Alert
-            onClose={handleClose}
-            severity="success"
-            sx={{ width: "100%" }}
-          >
-            Message sent successfully!
-          </Alert>
-        </Snackbar>
+        <Notif
+          open={open}
+          severity={"success"}
+          message={"Message sent successfully!"}
+          handleClose={handleClose}
+        />
       )}
       {open === true && error === true && (
-        <Snackbar open={true} autoHideDuration={5000} onClose={handleClose}>
-          <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
-            An Error occurred
-          </Alert>
-        </Snackbar>
+        <Notif
+          open={open}
+          severity={"error"}
+          message={"An Error occurred!"}
+          handleClose={handleClose}
+        />
       )}
     </>
   );
