@@ -34,6 +34,25 @@ const Home = () => {
     <>
       <Head>
         <title>Rishabh Ajay | Portfolio</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta
+          name="description"
+          content="A portfolio website built with Next.js and Material UI"
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="Rishabh Ajay's Portfolio website." />
+
+        <meta
+          property="og:description"
+          content="A portfolio website built with Next.js and Material UI"
+        />
+
+        <meta
+          property="og:image"
+          content="https://drive.google.com/file/d/1AU1udwocamsxgk7fnJHPGUj488w6WO-I/view?usp=sharing"
+        />
+
+        <meta property="og:site_name" content="Rishabh Ajay's Homepage" />
       </Head>
 
       <>

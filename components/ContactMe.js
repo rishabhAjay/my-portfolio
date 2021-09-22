@@ -66,7 +66,7 @@ const ContactMe = () => {
           }}
         >
           <div data-aos="fade">
-            <Card sx={{ maxWidth: 275, backgroundColor: "#b6c7cc" }}>
+            <Card sx={{ maxWidth: 275, backgroundColor: "#b9babd" }}>
               <CardContent>
                 <Box
                   component="form"
