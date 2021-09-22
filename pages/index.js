@@ -25,8 +25,8 @@ import styles from "../styles/Landing.module.css";
 /*Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/coding-dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
  */
 
-export default function Home() {
-  const [loading, setLoading] = useState(false);
+const Home = () => {
+  const [loading, setLoading] = useState(null);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -120,4 +120,6 @@ export default function Home() {
       )}
     </>
   );
-}
+};
+
+export default Home;
