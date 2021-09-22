@@ -19,10 +19,13 @@ const Footer = dynamic(import("../components/layout/Footer"));
 
 const Home = () => {
   const [loading, setLoading] = useState(null);
+  const [display, setDisplay] = useState(null);
   useEffect(() => {
+    setDisplay("none");
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      setDisplay(null);
     }, 5000);
   }, []);
 
@@ -56,7 +59,7 @@ const Home = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <>
+        <div display={display}>
           <Navbar />
           <Landing />
           <CssBaseline />
@@ -65,7 +68,7 @@ const Home = () => {
           <Project />
           <ContactMe />
           <Footer />
-        </>
+        </div>
       )}
     </>
   );
