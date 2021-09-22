@@ -79,14 +79,14 @@ const ContactMe = () => {
                 >
                   <TextField
                     type="text"
-                    label="Your Name"
+                    label="Name"
                     variant="outlined"
                     name="name"
                     required
                   />
                   <TextField
                     type="email"
-                    label="Your Email"
+                    label="Email"
                     variant="outlined"
                     placeholder="Enter email"
                     name="email"
