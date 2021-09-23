@@ -19,12 +19,12 @@ const ContactMe = dynamic(import("../components/ContactMe"));
 const Footer = dynamic(import("../components/layout/Footer"));
 
 const Home = () => {
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000);
-  // }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   useEffect(() => {
     Aos.init({ duration: 3000 });
@@ -49,24 +49,24 @@ const Home = () => {
 
         <meta property="og:image" content="/favicon.png" />
 
-        <meta property="og:site_name" content="Rishabh Ajay's Homepage" />
+        <meta property="og:site_name" content="My Homepage" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      {/* {loading ? (
+      {loading ? (
         <Spinner />
-      ) : ( */}
-      <>
-        <Navbar />
-        <Landing />
-        <CssBaseline />
-        <Experience />
-        <Skills />
-        <Project />
-        <ContactMe />
-        <Footer />
-      </>
-      {/* )} */}
+      ) : (
+        <>
+          <Navbar />
+          <Landing />
+          <CssBaseline />
+          <Experience />
+          <Skills />
+          <Project />
+          <ContactMe />
+          <Footer />
+        </>
+      )}
     </>
   );
 };
