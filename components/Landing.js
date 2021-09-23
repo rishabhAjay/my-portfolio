@@ -65,7 +65,7 @@ const Landing = () => {
           className={styles.buttons}
           style={{ backgroundColor: "#0b0c61" }}
         >
-          <DescriptionIcon style={{ marginBottom: "5px" }} />
+          <DescriptionIcon />
           &nbsp; View my Resume
         </Button>
       </a>
@@ -76,7 +76,7 @@ const Landing = () => {
           className={styles.buttons}
           style={{ backgroundColor: "#6b0b0b" }}
         >
-          <ContactMailIcon style={{ marginBottom: "5px" }} />
+          <ContactMailIcon />
           &nbsp; Contact Me
         </Button>
       </a>
