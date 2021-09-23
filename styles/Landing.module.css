@@ -1,16 +1,7 @@
-.landingText {
-  color: #ffffff;
-  font-size: 2.5rem !important;
-  text-align: center;
-  padding-top: 2rem !important;
-  font-family: "Comfortaa" !important;
-  font-weight: 700 !important;
-  text-shadow: 2px 2px #787878;
-}
-
+.landingText,
 .landingTextSec {
   color: #ffffff;
-  font-size: 1.6rem !important;
+
   text-align: center;
   padding-top: 1rem !important;
   font-family: "Comfortaa" !important;
@@ -25,17 +16,16 @@
 }
 
 .buttons {
-  border: 1px solid gray;
   border-radius: 25px !important;
-  font-size: 0.875 !important;
-  word-wrap: break-word !important;
-  max-width: 100% !important;
+
+  /* word-wrap: break-word !important;
+  max-width: 100% !important; */
   color: white !important;
   border: 2px solid whitesmoke !important;
   margin: 1.5rem 4px 3rem 4px !important;
   font-family: "Comfortaa" !important;
   font-weight: 700 !important;
-  padding-top: 6px !important;
+  /* padding-top: 6px !important; */
 }
 
 .buttons:hover {

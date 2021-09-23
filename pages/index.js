@@ -4,7 +4,11 @@ import dynamic from "next/dynamic";
 import "@fontsource/comfortaa";
 import "@fontsource/balsamiq-sans";
 import { CssBaseline } from "@mui/material";
-
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
@@ -19,6 +23,8 @@ const ContactMe = dynamic(import("../components/ContactMe"));
 const Footer = dynamic(import("../components/layout/Footer"));
 
 const Home = () => {
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -57,14 +63,16 @@ const Home = () => {
         <Spinner />
       ) : (
         <>
-          <Navbar />
-          <Landing />
-          <CssBaseline />
-          <Experience />
-          <Skills />
-          <Project />
-          <ContactMe />
-          <Footer />
+          <ThemeProvider theme={theme}>
+            <Navbar />
+            <Landing />
+            <CssBaseline />
+            <Experience />
+            <Skills />
+            <Project />
+            <ContactMe />
+            <Footer />
+          </ThemeProvider>
         </>
       )}
     </>
