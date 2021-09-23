@@ -17,7 +17,7 @@ const Landing = () => {
     <Box
       bg
       style={{
-        backgroundImage: `url(landingImage3.jpg)`,
+        backgroundImage: "url(landingImage3.jpg)",
         height: "33rem !important",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
