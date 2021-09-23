@@ -1,6 +1,6 @@
-import styles from "../../styles/Spinner.module.css";
 import HashLoader from "react-spinners/HashLoader";
 import CssBaseline from "@mui/material/CssBaseline";
+import styles from "../../styles/Spinner.module.css";
 
 const Spinner = () => {
   return (

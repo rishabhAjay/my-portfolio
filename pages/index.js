@@ -1,7 +1,8 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-
+import "@fontsource/comfortaa";
+import "@fontsource/balsamiq-sans";
 import { CssBaseline } from "@mui/material";
 
 import Aos from "aos";
@@ -26,7 +27,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 3000 });
   }, []);
 
   return (
