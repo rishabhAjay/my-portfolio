@@ -42,7 +42,7 @@ const Skills = () => {
   ]);
   return (
     <div
-      className="lazyload"
+      s
       id="skills"
       style={{
         background: "rgb(84,3,3)",

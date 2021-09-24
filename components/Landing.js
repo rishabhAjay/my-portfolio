@@ -27,7 +27,6 @@ const Landing = () => {
       <div className={styles.avatar}>
         {/* <Zoom in="true" style={{ transitionDelay: "300ms" }}> */}
         <Avatar
-          className="lazyload"
           sx={{ width: "9.5rem", height: "9.5rem" }}
           alt="Rishabh Ajay"
           src="/avatar.webp"
