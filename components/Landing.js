@@ -15,7 +15,7 @@ const Landing = () => {
   return (
     <Box
       style={{
-        backgroundImage: "url(landingImage3.jpg)",
+        backgroundImage: "url(landingImage3.webp)",
         height: "33rem !important",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -27,9 +27,10 @@ const Landing = () => {
       <div className={styles.avatar}>
         {/* <Zoom in="true" style={{ transitionDelay: "300ms" }}> */}
         <Avatar
-          sx={{ width: "8.5rem", height: "8.5rem" }}
+          className="lazyload"
+          sx={{ width: "9.5rem", height: "9.5rem" }}
           alt="Rishabh Ajay"
-          src="/avatar.png"
+          src="/avatar.webp"
         />
         {/* </Zoom> */}
       </div>

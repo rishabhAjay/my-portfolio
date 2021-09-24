@@ -12,6 +12,9 @@ import {
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 const Spinner = dynamic(import("../components/layout/Spinner.js"));
 const Navbar = dynamic(import("../components/layout/Navbar.js"));
@@ -53,10 +56,10 @@ const Home = () => {
           content="A portfolio website built with Next.js and Material UI"
         />
 
-        <meta property="og:image" content="/favicon.png" />
+        <meta property="og:image" content="/favicon.webp" />
 
         <meta property="og:site_name" content="My Homepage" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
       {loading ? (

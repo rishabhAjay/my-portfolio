@@ -10,38 +10,39 @@ import {
 const Skills = () => {
   const [itemData, setItemData] = useState([
     {
-      img: "/mongodb.png",
+      img: "/mongodb.webp",
       title: "MongoDB",
       link: "https://www.mongodb.com/",
     },
     {
-      img: "/express.png",
+      img: "/express.webp",
       title: "Express.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/react.png",
+      img: "/react.webp",
       title: "React.js",
       link: "https://reactjs.org/",
     },
     {
-      img: "/node.png",
+      img: "/node.webp",
       title: "Node.js",
       link: "https://expressjs.com/",
     },
     {
-      img: "/git.png",
+      img: "/git.webp",
       title: "Git",
       link: "https://git-scm.com/",
     },
     {
-      img: "/python.png",
+      img: "/python.webp",
       title: "Python",
       link: "https://www.python.org/",
     },
   ]);
   return (
     <div
+      className="lazyload"
       id="skills"
       style={{
         background: "rgb(84,3,3)",

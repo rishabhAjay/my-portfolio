@@ -24,6 +24,7 @@ const ProjectCard = ({ item }) => {
         }}
       >
         <CardMedia
+          className="lazyload"
           component="img"
           alt="Project Image"
           style={{ height: 150 }}
