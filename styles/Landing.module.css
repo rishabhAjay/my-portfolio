@@ -1,7 +1,6 @@
 .landingText,
 .landingTextSec {
   color: #ffffff;
-
   text-align: center;
   padding-top: 1rem !important;
   font-family: "Comfortaa" !important;
@@ -17,7 +16,6 @@
 
 .buttons {
   border-radius: 25px !important;
-
   color: white !important;
   border: 2px solid whitesmoke !important;
   margin: 1.5rem 4px 3rem 4px !important;

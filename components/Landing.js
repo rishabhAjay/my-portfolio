@@ -7,7 +7,6 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
 
-import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 
 import styles from "../styles/Landing.module.css";
@@ -15,7 +14,6 @@ import styles from "../styles/Landing.module.css";
 const Landing = () => {
   return (
     <Box
-      bg
       style={{
         backgroundImage: "url(landingImage3.jpg)",
         height: "33rem !important",
@@ -26,10 +24,9 @@ const Landing = () => {
         marginTop: "-2rem !important",
       }}
     >
-      <div data-aos="fade" className={styles.avatar}>
+      <div className={styles.avatar}>
         {/* <Zoom in="true" style={{ transitionDelay: "300ms" }}> */}
         <Avatar
-          data-aos-easing="ease-out"
           sx={{ width: "8.5rem", height: "8.5rem" }}
           alt="Rishabh Ajay"
           src="/avatar.png"
@@ -37,14 +34,10 @@ const Landing = () => {
         {/* </Zoom> */}
       </div>
 
-      <Typography data-aos="fade" variant="h3" className={styles.landingText}>
+      <Typography variant="h3" className={styles.landingText}>
         I am Rishabh Ajay
       </Typography>
-      <Typography
-        data-aos="fade"
-        variant="h4"
-        className={styles.landingTextSec}
-      >
+      <Typography variant="h4" className={styles.landingTextSec}>
         A{" "}
         <Typical
           loop={Infinity}

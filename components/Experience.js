@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Typography } from "@mui/material";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 /* background: `rgb(135,22,22)`,
 background: `linear-gradient(180deg, rgba(135,22,22,1) 0%, rgba(116,24,24,1) 35%, rgba(79,18,18,1) 100%)`; */
@@ -32,9 +30,7 @@ const Experience = () => {
       date: "2018-2022",
     },
   ]);
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+
   return (
     <div
       className="bodyFont"
