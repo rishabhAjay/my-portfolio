@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Typography,
   Card,
@@ -22,16 +21,13 @@ const ProjectCard = ({ item }) => {
           color: "white",
         }}
       >
-        <CardMedia>
-          <Image
-            src={item.image}
-            alt="Project Image"
-            height="150"
-            width="300"
-            layout="responsive"
-            objectFit="cover"
-          />
-        </CardMedia>
+        <CardMedia
+          className="lazyload"
+          component="img"
+          alt="Project Image"
+          style={{ height: 150 }}
+          image={item.image}
+        />
         <CardContent>
           <Typography
             className="bodyFont"

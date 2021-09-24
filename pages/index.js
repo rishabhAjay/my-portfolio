@@ -12,6 +12,9 @@ import {
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 const Spinner = dynamic(import("../components/layout/Spinner.js"));
 const Navbar = dynamic(import("../components/layout/Navbar.js"));

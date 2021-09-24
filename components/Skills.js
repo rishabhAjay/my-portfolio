@@ -42,7 +42,6 @@ const Skills = () => {
   ]);
   return (
     <div
-      s
       id="skills"
       style={{
         background: "rgb(84,3,3)",
@@ -79,6 +78,7 @@ const Skills = () => {
                     href={item.link}
                   >
                     <CardMedia
+                      className="lazyload"
                       style={{
                         objectFit: "contain",
                       }}
