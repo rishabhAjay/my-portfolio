@@ -10,7 +10,6 @@ const Navbar = () => {
       <AppBar position="absolute" className={styles.navbarStyles}>
         <Toolbar>
           <Typography
-            style={{ marginTop: "-1px" }}
             className={styles.navlinks}
             variant="body"
             sx={{ flexGrow: 1 }}
