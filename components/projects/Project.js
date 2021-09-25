@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { Typography } from "@mui/material";
-import Carousel from "react-elastic-carousel";
+const Carousel = dynamic(import("react-elastic-carousel"));
 
 const ProjectCard = dynamic(import("./ProjectCard.js"));
 

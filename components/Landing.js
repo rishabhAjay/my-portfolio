@@ -14,6 +14,7 @@ import styles from "../styles/Landing.module.css";
 const Landing = () => {
   return (
     <Box
+      id="landing"
       style={{
         backgroundImage: "url(landingImage4.webp)",
         width: "100%",
@@ -41,7 +42,7 @@ const Landing = () => {
         A{" "}
         <Typical
           loop={Infinity}
-          steps={["Software Engineer", 1500, "Web Developer", 1500]}
+          steps={["Software Engineer", 2500, "Web Developer", 2500]}
           wrapper="b"
         />
       </Typography>

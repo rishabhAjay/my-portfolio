@@ -1,9 +1,10 @@
+import "@fontsource/comfortaa";
+import "@fontsource/balsamiq-sans";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import "@fontsource/comfortaa";
-import "@fontsource/balsamiq-sans";
 import { CssBaseline } from "@mui/material";
+
 import {
   createTheme,
   ThemeProvider,
@@ -13,12 +14,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 import "lazysizes";
-// import a plugin
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
-const Spinner = dynamic(import("../components/layout/Spinner.js"));
-const Navbar = dynamic(import("../components/layout/Navbar.js"));
-const Landing = dynamic(import("../components/Landing.js"));
+import Spinner from "../components/layout/Spinner.js";
+import Navbar from "../components/layout/Navbar.js";
+import Landing from "../components/Landing.js";
 const Experience = dynamic(import("../components/Experience.js"));
 const Skills = dynamic(import("../components/Skills.js"));
 const Project = dynamic(import("../components/projects/Project.js"));

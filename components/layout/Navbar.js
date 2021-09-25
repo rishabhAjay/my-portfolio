@@ -1,8 +1,5 @@
 import AppBar from "@mui/material/AppBar";
-import Link from "next/link";
-
 import { Box, Toolbar, Typography, Button, CssBaseline } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
 
 import styles from "../../styles/Navbar.module.css";
 
@@ -12,16 +9,16 @@ const Navbar = () => {
       <CssBaseline />
       <AppBar position="absolute" className={styles.navbarStyles}>
         <Toolbar>
-          <Link passHref={true} href="/">
-            <Typography
-              className={styles.navlinks}
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1 }}
-            >
-              <HomeIcon style={{ fontSize: "2rem" }} />
-            </Typography>
-          </Link>
+          <Typography
+            style={{ marginTop: "-1px" }}
+            className={styles.navlinks}
+            variant="body"
+            sx={{ flexGrow: 1 }}
+          >
+            <a className={styles.navlinks} href="#landing">
+              MY PORTFOLIO
+            </a>
+          </Typography>
 
           <Button color="inherit">
             <a className={styles.navlinks} href="#skills">
