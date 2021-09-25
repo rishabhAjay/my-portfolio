@@ -44,9 +44,9 @@ const Skills = () => {
     <div
       id="skills"
       style={{
-        background: "rgb(84,3,3)",
+        background: "rgb(28,26,26)",
         background:
-          "linear-gradient(180deg, rgba(84,3,3,1) 0%, rgba(55,3,3,1) 35%, rgba(40,1,1,1) 100%)",
+          "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(88,4,4,1) 42%, rgba(29,27,27,1) 100%)",
       }}
     >
       <Typography data-aos="fade" variant="h4" className="headings">

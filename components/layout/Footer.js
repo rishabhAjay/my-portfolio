@@ -10,8 +10,8 @@ const Footer = () => {
     <div
       className="bodyFont"
       style={{
-        background: `rgb(56,56,56)`,
-        background: `linear-gradient(180deg, rgba(56,56,56,1) 0%, rgba(41,42,43,1) 35%, rgba(10,10,10,1) 100%)`,
+        background: `rgb(14,14,14)`,
+        background: `linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(29,29,29,1) 56%, rgba(69,67,67,1) 100%)`,
       }}
     >
       <div

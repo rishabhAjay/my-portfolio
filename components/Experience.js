@@ -6,9 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Typography } from "@mui/material";
 
-/* background: `rgb(135,22,22)`,
-background: `linear-gradient(180deg, rgba(135,22,22,1) 0%, rgba(116,24,24,1) 35%, rgba(79,18,18,1) 100%)`; */
-
 const Experience = () => {
   const [timelines, setTimelines] = useState([
     {
@@ -35,9 +32,9 @@ const Experience = () => {
     <div
       className="bodyFont"
       style={{
-        background: "rgb(3,19,73)",
+        background: "rgb(28,26,26)",
         background:
-          "linear-gradient(180deg, rgba(3,19,73,1) 0%, rgba(3,30,57,1) 35%, rgba(1,8,40,1) 100%)",
+          "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(8,4,88,1) 42%, rgba(29,27,27,1) 100%)",
         overflow: "hidden",
         height: "100%",
       }}

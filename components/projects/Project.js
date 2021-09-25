@@ -58,9 +58,9 @@ const Project = (props) => {
     <div
       id="projects"
       style={{
-        background: "rgb(3,19,73)",
+        background: "rgb(28,26,26)",
         background:
-          "linear-gradient(180deg, rgba(3,19,73,1) 0%, rgba(3,30,57,1) 35%, rgba(1,8,40,1) 100%)",
+          "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(8,4,88,1) 42%, rgba(29,27,27,1) 100%)",
         paddingBottom: "3rem",
       }}
     >
