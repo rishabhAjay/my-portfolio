@@ -49,10 +49,10 @@ const Skills = () => {
           "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(88,4,4,1) 42%, rgba(29,27,27,1) 100%)",
       }}
     >
-      <Typography data-aos="fade" variant="h4" className="headings">
+      <Typography data-aos="slide-up" variant="h4" className="headings">
         SKILLS
       </Typography>
-      <div data-aos="fade">
+      <div data-aos="slide-up">
         <Grid
           container
           rowSpacing={6}
@@ -72,7 +72,9 @@ const Skills = () => {
               >
                 <CardActionArea className="cardAction">
                   <a
-                    style={{ textDecoration: "none" }}
+                    style={{
+                      textDecoration: "none",
+                    }}
                     rel="noreferrer"
                     target="_blank"
                     href={item.link}

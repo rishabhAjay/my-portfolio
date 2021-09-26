@@ -17,6 +17,7 @@
 
 .rec.rec-arrow {
   background-color: cornsilk;
+  border: 2px solid cornsilk !important;
   color: black;
 }
 .rec.rec-arrow:hover {

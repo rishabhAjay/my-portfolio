@@ -1,5 +1,8 @@
 import "@fontsource/comfortaa";
 import "@fontsource/balsamiq-sans";
+import "aos/dist/aos.css";
+import "animate.css/animate.min.css";
+import "lazysizes";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
@@ -11,9 +14,6 @@ import {
   responsiveFontSizes,
 } from "@mui/material/styles";
 import Aos from "aos";
-import "aos/dist/aos.css";
-import "animate.css/animate.min.css";
-import "lazysizes";
 import Spinner from "../components/layout/Spinner.js";
 import Navbar from "../components/layout/Navbar.js";
 import Landing from "../components/Landing.js";

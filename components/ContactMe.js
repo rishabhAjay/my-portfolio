@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import {
   Box,
@@ -17,7 +17,6 @@ const Notif = dynamic(import("./layout/Notif"));
 const ContactMe = () => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(null);
-  const form = useRef();
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
@@ -30,7 +29,7 @@ const ContactMe = () => {
       await emailjs.sendForm(
         "gmail",
         "gmail_template_1",
-        form.current,
+        e.target,
         "user_bOO0ZiXPVubItFZHXNlPB"
       );
 
@@ -54,7 +53,7 @@ const ContactMe = () => {
         }}
         id="contact"
       >
-        <Typography data-aos="fade" variant="h4" className="headings">
+        <Typography data-aos="slide-up" variant="h4" className="headings">
           CONTACT ME
         </Typography>
 
@@ -65,7 +64,7 @@ const ContactMe = () => {
             padding: "0 0 4rem 0",
           }}
         >
-          <div data-aos="fade">
+          <div data-aos="slide-up">
             <Card sx={{ maxWidth: 275, backgroundColor: "#b9babd" }}>
               <CardContent>
                 <Box
@@ -74,7 +73,6 @@ const ContactMe = () => {
                     "& .MuiTextField-root": { m: 1, width: "25ch" },
                   }}
                   autoComplete="off"
-                  ref={form}
                   onSubmit={sendEmail}
                 >
                   <TextField

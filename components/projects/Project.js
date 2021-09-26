@@ -64,17 +64,16 @@ const Project = (props) => {
         paddingBottom: "3rem",
       }}
     >
-      <Typography data-aos="fade" variant="h4" className="headings">
+      <Typography data-aos="slide-up" className="headings" variant="h4">
         PROJECTS
       </Typography>
-      <div className="rec">
-        <div data-aos="fade">
-          <Carousel breakPoints={breakPoints}>
-            {items.map((item, i) => (
-              <ProjectCard key={item.id} item={item} />
-            ))}
-          </Carousel>
-        </div>
+
+      <div data-aos="slide-up">
+        <Carousel breakPoints={breakPoints}>
+          {items.map((item, i) => (
+            <ProjectCard key={item.id} item={item} />
+          ))}
+        </Carousel>
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ const Experience = () => {
       }}
       id="timeline"
     >
-      <Typography variant="h4" className="headings">
+      <Typography data-aos="slide-up" variant="h4" className="headings">
         TIMELINE
       </Typography>
       <div style={{ padding: "0 1rem 0 1rem" }}>
