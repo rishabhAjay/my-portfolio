@@ -34,7 +34,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (

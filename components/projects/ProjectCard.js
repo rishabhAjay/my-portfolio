@@ -13,7 +13,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Chip from "@mui/material/Chip";
 const ProjectCard = ({ item }) => {
   return (
-    <div>
+    <>
       <Card
         sx={{
           maxWidth: 300,
@@ -72,7 +72,7 @@ const ProjectCard = ({ item }) => {
           </a>
         </CardActions>
       </Card>
-    </div>
+    </>
   );
 };
 

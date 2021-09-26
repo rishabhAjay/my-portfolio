@@ -55,27 +55,29 @@ const Project = (props) => {
   ];
 
   return (
-    <div
-      id="projects"
-      style={{
-        background: "rgb(28,26,26)",
-        background:
-          "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(8,4,88,1) 42%, rgba(29,27,27,1) 100%)",
-        paddingBottom: "3rem",
-      }}
-    >
-      <Typography data-aos="slide-up" className="headings" variant="h4">
-        PROJECTS
-      </Typography>
+    <>
+      <div
+        id="projects"
+        style={{
+          background: "rgb(28,26,26)",
+          background:
+            "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(8,4,88,1) 42%, rgba(29,27,27,1) 100%)",
+          paddingBottom: "3rem",
+        }}
+      >
+        <Typography data-aos="slide-up" className="headings" variant="h4">
+          PROJECTS
+        </Typography>
 
-      <div data-aos="slide-up">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item, i) => (
-            <ProjectCard key={item.id} item={item} />
-          ))}
-        </Carousel>
+        <div data-aos="slide-up">
+          <Carousel breakPoints={breakPoints}>
+            {items.map((item, i) => (
+              <ProjectCard key={item.id} item={item} />
+            ))}
+          </Carousel>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

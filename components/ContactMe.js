@@ -50,70 +50,77 @@ const ContactMe = () => {
           background: "rgb(28,26,26)",
           background:
             "linear-gradient(180deg, rgba(28,26,26,1) 0%, rgba(88,4,4,1) 42%, rgba(29,27,27,1) 100%)",
+          overflow: "hidden",
         }}
         id="contact"
       >
-        <Typography data-aos="slide-up" variant="h4" className="headings">
+        <Typography
+          data-aos="slide-up"
+          data-aos-offset="200"
+          variant="h4"
+          className="headings"
+        >
           CONTACT ME
         </Typography>
 
         <div
+          data-aos="slide-up"
+          data-aos-offset="300"
           style={{
             display: "flex",
             justifyContent: "center",
             padding: "0 0 4rem 0",
           }}
         >
-          <div data-aos="slide-up">
-            <Card sx={{ maxWidth: 275, backgroundColor: "#b9babd" }}>
-              <CardContent>
-                <Box
-                  component="form"
-                  sx={{
-                    "& .MuiTextField-root": { m: 1, width: "25ch" },
-                  }}
-                  autoComplete="off"
-                  onSubmit={sendEmail}
-                >
-                  <TextField
-                    type="text"
-                    label="Name"
-                    variant="outlined"
-                    name="name"
-                    required
-                  />
-                  <TextField
-                    type="email"
-                    label="Email"
-                    variant="outlined"
-                    placeholder="Enter email"
-                    name="email"
-                    required
-                  />
-                  <TextField
-                    label="Message"
-                    placeholder="Enter Message"
-                    name="message"
-                    variant="outlined"
-                    multiline
-                    required
-                  />
-                  <CardActions>
-                    <Button
-                      className="contactBtn"
-                      type="submit"
-                      size="small"
-                      value="Send"
-                    >
-                      Send
-                    </Button>
-                  </CardActions>
-                </Box>
-              </CardContent>
-            </Card>
-          </div>
+          <Card sx={{ maxWidth: 275, backgroundColor: "#b9babd" }}>
+            <CardContent>
+              <Box
+                component="form"
+                sx={{
+                  "& .MuiTextField-root": { m: 1, width: "25ch" },
+                }}
+                autoComplete="off"
+                onSubmit={sendEmail}
+              >
+                <TextField
+                  type="text"
+                  label="Name"
+                  variant="outlined"
+                  name="name"
+                  required
+                />
+                <TextField
+                  type="email"
+                  label="Email"
+                  variant="outlined"
+                  placeholder="Enter email"
+                  name="email"
+                  required
+                />
+                <TextField
+                  label="Message"
+                  placeholder="Enter Message"
+                  name="message"
+                  variant="outlined"
+                  multiline
+                  required
+                />
+                <CardActions>
+                  <Button
+                    className="contactBtn"
+                    type="submit"
+                    size="small"
+                    value="Send"
+                  >
+                    Send
+                  </Button>
+                </CardActions>
+              </Box>
+            </CardContent>
+          </Card>
         </div>
       </div>
+
       {open === true && error === false && (
         <Notif
           open={open}
