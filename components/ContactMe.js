@@ -56,7 +56,7 @@ const ContactMe = () => {
       >
         <Typography
           data-aos="slide-up"
-          data-aos-offset="200"
+          data-aos-offset="100"
           variant="h4"
           className="headings"
         >
@@ -65,7 +65,7 @@ const ContactMe = () => {
 
         <div
           data-aos="slide-up"
-          data-aos-offset="300"
+          data-aos-offset="200"
           style={{
             display: "flex",
             justifyContent: "center",
