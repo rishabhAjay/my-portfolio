@@ -16,7 +16,7 @@ const Landing = () => {
     <Box
       id="landing"
       style={{
-        backgroundImage: "url(landingImage4.webp)",
+        backgroundImage: "url(landingImage5.webp)",
         width: "100%",
         height: "auto",
         backgroundPosition: "center",
