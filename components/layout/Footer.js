@@ -15,7 +15,6 @@ const Footer = () => {
       }}
     >
       <div
-        data-aos="fade"
         style={{
           textAlign: "center",
           display: "flex",
