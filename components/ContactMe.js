@@ -66,12 +66,20 @@ const ContactMe = () => {
             padding: "0 0 4rem 0",
           }}
         >
-          <Card sx={{ maxWidth: 275, backgroundColor: "#b9babd" }}>
+          <Card
+            sx={{
+              maxWidth: 300,
+              backgroundColor: "#b9babd",
+            }}
+          >
             <CardContent>
               <Box
                 component="form"
                 sx={{
-                  "& .MuiTextField-root": { m: 1, width: "25ch" },
+                  "& .MuiTextField-root": {
+                    m: 1,
+                    maxWidth: "100%",
+                  },
                 }}
                 autoComplete="off"
                 onSubmit={sendEmail}
@@ -80,6 +88,7 @@ const ContactMe = () => {
                   type="text"
                   label="Name"
                   variant="outlined"
+                  placeholder="Enter Name"
                   name="name"
                   required
                 />
@@ -87,7 +96,7 @@ const ContactMe = () => {
                   type="email"
                   label="Email"
                   variant="outlined"
-                  placeholder="Enter email"
+                  placeholder="Enter Email"
                   name="email"
                   required
                 />

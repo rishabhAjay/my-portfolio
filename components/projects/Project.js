@@ -27,6 +27,24 @@ const Project = (props) => {
     },
     {
       id: 3,
+      project: "Typing Game ",
+      description:
+        "A typing game built with the MERN stack. Uses JWT for Authentication. ",
+      techs: ["React", "Node.js", "MongoDB", "Express"],
+      link: "https://github.com/rishabhAjay/word-race",
+      image: "/Game.webp",
+    },
+    {
+      id: 4,
+      project: "Lights Off ",
+      description:
+        "A Discord Bot that inverts the colors or grayscales an image. Useful for light-mode images. ",
+      techs: ["React", "Node.js", "MongoDB", "Express"],
+      link: "https://github.com/rishabhAjay/lightsoff",
+      image: "/LightsOff.webp",
+    },
+    {
+      id: 5,
       project: "Patient Record System",
       description:
         "A CRUD application that allows clinic staff members to add, delete, update and view patient Details. ",
@@ -35,7 +53,7 @@ const Project = (props) => {
       image: "/registration.webp",
     },
     {
-      id: 4,
+      id: 6,
       project: "Circular Buffer Simulation ",
       description:
         "A computer graphics project that simulates the working of a Circular Queue. ",
