@@ -66,12 +66,18 @@ const ContactMe = () => {
             padding: "0 0 4rem 0",
           }}
         >
-          <Card sx={{ maxWidth: 300, backgroundColor: "#b9babd" }}>
+          <Card
+            sx={{
+              maxWidth: 300,
+              backgroundColor: "#b9babd",
+            }}
+          >
             <CardContent>
               <Box
+                style={{ marginRight: "15px" }}
                 component="form"
                 sx={{
-                  "& .MuiTextField-root": { m: 1, width: "23ch" },
+                  "& .MuiTextField-root": { m: 1, width: "100%" },
                 }}
                 autoComplete="off"
                 onSubmit={sendEmail}
