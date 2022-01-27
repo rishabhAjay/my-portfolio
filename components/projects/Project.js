@@ -39,7 +39,7 @@ const Project = (props) => {
       project: "Lights Off ",
       description:
         "A Discord Bot that inverts the colors or grayscales an image. Useful for light-mode images. ",
-      techs: ["React", "Node.js", "MongoDB", "Express"],
+      techs: ["Discord.js", "Node.js", "Puppeteer"],
       link: "https://github.com/rishabhAjay/lightsoff",
       image: "/LightsOff.webp",
     },
