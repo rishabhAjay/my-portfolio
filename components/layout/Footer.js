@@ -70,7 +70,7 @@ const Footer = () => {
           component="div"
         >
           <CopyrightIcon fontSize="small" style={{ marginBottom: "-5px" }} />{" "}
-          <CssBaseline /> Rishabh Ajay
+          <CssBaseline /> Rishabh Ajay&nbsp;{new Date().getFullYear()}
         </Typography>
       </div>
     </div>

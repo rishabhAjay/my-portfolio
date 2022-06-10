@@ -6,28 +6,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Typography } from "@mui/material";
-
+import experience from "./data/ExperienceData";
 const Experience = () => {
-  const [timelines, setTimelines] = useState([
-    {
-      title: "Our Own English High School",
-      location: "Sharjah, UAE",
-      designation: "10th Grade",
-      date: "2015-2016",
-    },
-    {
-      title: "Manasarowar Pushkarini Vidyashrama",
-      location: "Mysore, India",
-      designation: "12th Grade",
-      date: "2017-2018",
-    },
-    {
-      title: "Vidyavardhaka College of Engineering",
-      location: "Mysore, India",
-      designation: "B.E. in CSE",
-      date: "2018-2022",
-    },
-  ]);
+  const [timelines, setTimelines] = useState(experience);
 
   return (
     <div
@@ -68,9 +49,9 @@ const Experience = () => {
               <VerticalTimelineElement
                 key={i}
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: "#c9a30c", color: "#fff" }}
+                contentStyle={{ background: "#947507", color: "#fff" }}
                 date={timeline.date}
-                iconStyle={{ background: "#c9a30c", color: "#fff" }}
+                iconStyle={{ background: "#947507", color: "#fff" }}
               >
                 <h3 className="vertical-timeline-element-title">
                   {" "}
