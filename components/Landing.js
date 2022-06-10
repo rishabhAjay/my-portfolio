@@ -29,7 +29,7 @@ const Landing = () => {
       <div className={styles.avatar}>
         <Avatar
           className="lazyload"
-          sx={{ width: "10rem", height: "10rem" }}
+          sx={{ width: "11rem", height: "auto" }}
           alt="Rishabh Ajay"
           src="/avatar.webp"
         />
@@ -49,7 +49,7 @@ const Landing = () => {
 
       <a
         style={{ textDecoration: "none" }}
-        href="https://drive.google.com/file/d/11EixbfaT8jeB5Q9QSfcw0Em7KqJrZTH6/view?usp=sharing"
+        href="https://drive.google.com/file/d/1b8kmPfi_vyzJysursWClCknsNz3KqBKD/view?usp=sharing"
         rel="noreferrer"
         target="_blank"
       >

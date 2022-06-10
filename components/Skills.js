@@ -5,41 +5,25 @@ import {
   CardMedia,
   CardActionArea,
   Typography,
+  Pagination,
+  Box,
 } from "@mui/material";
+import usePagination from "./functions/Pagination.js";
+import skills from "./data/SkillsData.js";
 
 const Skills = () => {
-  const [itemData, setItemData] = useState([
-    {
-      img: "/mongodb.webp",
-      title: "MongoDB",
-      link: "https://www.mongodb.com/",
-    },
-    {
-      img: "/express.webp",
-      title: "Express.js",
-      link: "https://expressjs.com/",
-    },
-    {
-      img: "/react.webp",
-      title: "React.js",
-      link: "https://reactjs.org/",
-    },
-    {
-      img: "/node.webp",
-      title: "Node.js",
-      link: "https://expressjs.com/",
-    },
-    {
-      img: "/git.webp",
-      title: "Git",
-      link: "https://git-scm.com/",
-    },
-    {
-      img: "/python.webp",
-      title: "Python",
-      link: "https://www.python.org/",
-    },
-  ]);
+  const [itemData, setItemData] = useState(skills);
+
+  const [page, setPage] = useState(1);
+  const PER_PAGE = 6;
+
+  const count = Math.ceil(itemData.length / PER_PAGE);
+  const Data = usePagination(itemData, PER_PAGE);
+  const handleChange = (e, p) => {
+    setPage(p);
+    Data.jump(p);
+  };
+
   return (
     <>
       <div
@@ -53,15 +37,35 @@ const Skills = () => {
         <Typography data-aos="slide-up" variant="h4" className="headings">
           SKILLS
         </Typography>
+        <Box
+          data-aos="slide-up"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            overflow: "hidden",
+            p: 3,
+          }}
+        >
+          <Pagination
+            className="pagination"
+            count={count}
+            size="large"
+            page={page}
+            color="secondary"
+            sx={{ color: "primary.main" }}
+            onChange={handleChange}
+          />
+        </Box>
         <div>
           <Grid
             container
             rowSpacing={6}
             columnSpacing={{ xs: 1, sm: 1, md: 1 }}
-            style={{ padding: "0 5rem 5rem 5rem" }}
+            style={{ padding: "2rem 5rem 5rem 5rem" }}
           >
-            {itemData.map((item, i) => (
-              <Grid key={item.title} item xs={12} md={4} sm={6}>
+            {Data.currentData().map((item, i) => (
+              <Grid key={item.id} item xs={12} md={4} sm={6}>
                 <Card
                   sx={{
                     maxWidth: "100%",
@@ -106,6 +110,7 @@ const Skills = () => {
               </Grid>
             ))}
           </Grid>
+          <Box dire></Box>
         </div>
       </div>
     </>

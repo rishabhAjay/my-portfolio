@@ -53,3 +53,7 @@
 .footerIcons:hover {
   opacity: 0.9;
 }
+
+.MuiPaginationItem-root {
+  color: whitesmoke !important;
+}
