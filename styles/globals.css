@@ -55,5 +55,5 @@
 }
 
 .MuiPaginationItem-root {
-  color: whitesmoke;
+  color: whitesmoke !important;
 }
