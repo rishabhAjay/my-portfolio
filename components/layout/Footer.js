@@ -69,8 +69,7 @@ const Footer = () => {
           align="center"
           component="div"
         >
-          <CopyrightIcon fontSize="small" style={{ marginBottom: "-5px" }} />{" "}
-          <CssBaseline /> Rishabh Ajay&nbsp;{new Date().getFullYear()}
+          &copy; Rishabh Ajay&nbsp;{new Date().getFullYear()}
         </Typography>
       </div>
     </div>

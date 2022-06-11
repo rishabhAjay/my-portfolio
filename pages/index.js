@@ -64,10 +64,10 @@ const Home = () => {
         <Spinner />
       ) : (
         <>
+          <CssBaseline />
           <ThemeProvider theme={theme}>
             <Navbar />
             <Landing />
-            <CssBaseline />
             <Experience />
             <Skills />
             <Project />

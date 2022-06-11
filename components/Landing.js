@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 
 import Button from "@mui/material/Button";
-import { Typography, Avatar } from "@mui/material";
+import { Typography, Avatar, Stack } from "@mui/material";
 
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -46,34 +46,41 @@ const Landing = () => {
           wrapper="b"
         />
       </Typography>
-
-      <a
-        style={{ textDecoration: "none" }}
-        href="https://drive.google.com/file/d/1b8kmPfi_vyzJysursWClCknsNz3KqBKD/view?usp=sharing"
-        rel="noreferrer"
-        target="_blank"
+      <Stack
+        justifyContent={"center"}
+        alignItems="center"
+        direction={"row"}
+        // spacing={{ xs: 1, sm: 2, md: 4 }}
+        // spacing={1}
       >
-        <Button
-          variant="contained"
-          size="small"
-          className={styles.buttons}
-          style={{ backgroundColor: "#0b0c61" }}
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://drive.google.com/file/d/1b8kmPfi_vyzJysursWClCknsNz3KqBKD/view?usp=sharing"
+          rel="noreferrer"
+          target="_blank"
         >
-          <DescriptionIcon />
-          &nbsp; View my Resume
-        </Button>
-      </a>
-      <a href="#contact" style={{ textDecoration: "none" }}>
-        <Button
-          variant="contained"
-          size="small"
-          className={styles.buttons}
-          style={{ backgroundColor: "#6b0b0b" }}
-        >
-          <ContactMailIcon />
-          &nbsp; Contact Me
-        </Button>
-      </a>
+          <Button
+            variant="contained"
+            size="small"
+            startIcon={<DescriptionIcon />}
+            className={styles.buttons}
+            style={{ backgroundColor: "#0b0c61" }}
+          >
+            View my Resume
+          </Button>
+        </a>
+        <a href="#contact" style={{ textDecoration: "none" }}>
+          <Button
+            variant="contained"
+            startIcon={<ContactMailIcon />}
+            size="small"
+            className={styles.buttons}
+            style={{ backgroundColor: "#6b0b0b" }}
+          >
+            Contact Me
+          </Button>
+        </a>
+      </Stack>
     </Box>
   );
 };
