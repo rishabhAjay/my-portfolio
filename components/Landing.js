@@ -24,6 +24,8 @@ const Landing = () => {
         objectFit="cover"
         objectPosition="center"
         placeholder="blur"
+        loading="eager"
+        priority={true}
       />
       <div className={styles.avatar}>
         <Avatar
