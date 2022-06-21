@@ -23,7 +23,7 @@ const Landing = () => {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        placeholder="blur"
+        // placeholder="blur"
         loading="eager"
         priority={true}
       />
