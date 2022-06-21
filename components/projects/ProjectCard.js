@@ -1,11 +1,9 @@
-import {
-  Typography,
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-} from "@mui/material";
-
+import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import Image from "next/image";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
 import styles from "../../styles/Projects.module.css";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,12 +19,23 @@ const ProjectCard = ({ item }) => {
           color: "white",
         }}
       >
-        <CardMedia
+        {/* <CardMedia
           className="lazyload"
           component="img"
           alt="Project Image"
           style={{ height: 150 }}
           image={item.image}
+        /> */}
+        <Image
+          alt="Project Image"
+          // style={{ height: 150 }}
+          height={600}
+          width={1000}
+          quality={100}
+          // image={item.image}
+          objectFit="cover"
+          src={item.image}
+          layout="responsive"
         />
         <CardContent>
           <Typography

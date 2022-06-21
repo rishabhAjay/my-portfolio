@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import {
-  Card,
-  Grid,
-  CardMedia,
-  CardActionArea,
-  Typography,
-  Pagination,
-  Box,
-} from "@mui/material";
+
+import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
+import CardMedia from "@mui/material/CardMedia";
+import CardActionArea from "@mui/material/CardActionArea";
+import Typography from "@mui/material/Typography";
+import Pagination from "@mui/material/Pagination";
+import Box from "@mui/material/Box";
 import usePagination from "./functions/Pagination.js";
 import skills from "./data/SkillsData.js";
 

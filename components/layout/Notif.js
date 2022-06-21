@@ -1,5 +1,5 @@
 import React from "react";
-import { Snackbar } from "@mui/material";
+import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 
 const Notif = ({ open, handleClose, severity, message }) => {

@@ -1,31 +1,30 @@
-import { Box } from "@mui/system";
-
 import Button from "@mui/material/Button";
-import { Typography, Avatar, Stack } from "@mui/material";
-
+import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Box";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
-
+import landingImage5 from "../public/landingImage5.webp";
 import "animate.css/animate.min.css";
 
 import styles from "../styles/Landing.module.css";
+import Image from "next/image";
 
 const Landing = () => {
   return (
-    <Box
-      id="landing"
-      style={{
-        backgroundImage: "url(landingImage5.webp)",
-        width: "100%",
-        height: "auto",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        textAlign: "center",
-        marginTop: "-2rem !important",
-      }}
-    >
+    <>
+      <Image
+        className={styles.landing}
+        alt="landing image"
+        src={landingImage5}
+        id="landing"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        placeholder="blur"
+      />
       <div className={styles.avatar}>
         <Avatar
           className="lazyload"
@@ -81,7 +80,7 @@ const Landing = () => {
           </Button>
         </a>
       </Stack>
-    </Box>
+    </>
   );
 };
 

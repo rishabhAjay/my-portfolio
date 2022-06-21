@@ -1,11 +1,10 @@
 import { useState } from "react";
-import dynamic from "next/dynamic";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import experience from "./data/ExperienceData";
 const Experience = () => {
   const [timelines, setTimelines] = useState(experience);

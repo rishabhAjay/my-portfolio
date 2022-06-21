@@ -3,10 +3,11 @@ import "@fontsource/balsamiq-sans";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 import "lazysizes";
+
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import { CssBaseline } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 
 import {
   createTheme,

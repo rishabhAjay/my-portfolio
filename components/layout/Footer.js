@@ -1,9 +1,10 @@
 import React from "react";
-import { CssBaseline, Typography, Stack, Link } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import CopyrightIcon from "@mui/icons-material/Copyright";
 
 const Footer = () => {
   return (
