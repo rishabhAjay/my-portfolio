@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
-import landingImage5 from "../public/landingImage5.webp";
 import "animate.css/animate.min.css";
 
 import styles from "../styles/Landing.module.css";
@@ -15,18 +14,17 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <>
-      <Image
-        className={styles.landing}
-        alt="landing image"
-        src={landingImage5}
-        id="landing"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        // placeholder="blur"
-        loading="eager"
-        priority={true}
-      />
+      <div className={styles.landing}>
+        <Image
+          alt="landing image"
+          src="/landingImage5.webp"
+          id="landing"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
+
       <div className={styles.avatar}>
         <Avatar
           className="lazyload"
