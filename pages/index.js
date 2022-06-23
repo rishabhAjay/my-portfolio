@@ -64,8 +64,8 @@ const Home = () => {
           property="url"
           content="https://portfolio-rishabhajay.vercel.app/"
         />
-        <meta property="image" content="/android-chrome-192x192.png" />
-        <meta property="og:image" content="/android-chrome-192x192.png" />
+        <meta property="image" content="/apple-touch-icon.png" />
+        <meta property="og:image" content="/apple-touch-icon.png" />
         <meta
           property="og:url"
           content="https://portfolio-rishabhajay.vercel.app/"
