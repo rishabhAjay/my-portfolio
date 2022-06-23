@@ -1,5 +1,5 @@
-import "@fontsource/comfortaa";
 import "@fontsource/balsamiq-sans";
+import "@fontsource/comfortaa";
 import "aos/dist/aos.css";
 import "animate.css/animate.min.css";
 import "lazysizes";
@@ -43,22 +43,40 @@ const Home = () => {
       <Head>
         <title>Rishabh Ajay | Portfolio</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="title" content="Rishabh Ajay's portfolio website" />
         <meta
           name="description"
-          content="A portfolio website built with Next.js and Material UI"
+          content="A portfolio website created with Next.js and Material-UI"
         />
-        <meta name="robots" content="noindex, nofollow" />
-        <meta property="og:title" content="Rishabh Ajay's Portfolio website." />
-
         <meta
-          property="og:description"
-          content="A portfolio website built with Next.js and Material UI"
+          name="keywords"
+          content="portfolio, next.js, react, material-ui, engineering, software, website, web development"
         />
+        <meta name="robots" content="index, nofollow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
 
         <meta property="og:image" content="/favicon.webp" />
 
         <meta property="og:site_name" content="My Homepage" />
-        <link rel="icon" href="/favicon.webp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       {loading ? (
