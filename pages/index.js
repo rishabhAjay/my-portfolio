@@ -60,6 +60,11 @@ const Home = () => {
           name="og:description"
           content="A portfolio website created with Next.js and Material-UI"
         />
+        <meta
+          property="url"
+          content="https://portfolio-rishabhajay.vercel.app/"
+        />
+        <meta property="image" content="/android-chrome-192x192.png" />
         <meta property="og:image" content="/android-chrome-192x192.png" />
         <meta
           property="og:url"
