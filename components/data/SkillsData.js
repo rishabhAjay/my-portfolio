@@ -24,7 +24,7 @@ const skills = [
     id: 4,
   },
   {
-    img: "/node.webp",
+    img: "/nodejs.webp",
     title: "Node.js",
     link: "https://expressjs.com/",
     id: 5,
@@ -48,17 +48,18 @@ const skills = [
     id: 8,
   },
   {
-    img: "/html.webp",
-    title: "HTML5",
-    link: "https://www.w3schools.com/html/",
+    img: "/redux.webp",
+    title: "Redux",
+    link: "https://redux-toolkit.js.org/",
     id: 9,
   },
   {
-    img: "/css.webp",
-    title: "CSS3",
-    link: "https://www.w3schools.com/css/",
+    img: "/firebase.webp",
+    title: "Firebase",
+    link: "https://firebase.google.com/",
     id: 10,
   },
+
   {
     img: "/rest.webp",
     title: "REST API",
@@ -78,16 +79,28 @@ const skills = [
     id: 13,
   },
   {
+    img: "/html.webp",
+    title: "HTML5",
+    link: "https://www.w3schools.com/html/",
+    id: 14,
+  },
+  {
+    img: "/css.webp",
+    title: "CSS3",
+    link: "https://www.w3schools.com/css/",
+    id: 15,
+  },
+  {
     img: "/linux.webp",
     title: "Linux",
     link: "https://www.linux.org/",
-    id: 14,
+    id: 16,
   },
   {
     img: "/python.webp",
     title: "Python",
     link: "https://www.python.org/",
-    id: 15,
+    id: 17,
   },
 ];
 

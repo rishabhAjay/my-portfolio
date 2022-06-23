@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Pagination from "@mui/material/Pagination";
 import Box from "@mui/material/Box";
 import usePagination from "./functions/Pagination.js";
 import skills from "./data/SkillsData.js";
+import Image from "next/image.js";
 
 const Skills = () => {
   const [itemData, setItemData] = useState(skills);
@@ -83,9 +83,8 @@ const Skills = () => {
                       target="_blank"
                       href={item.link}
                     >
-                      <CardMedia
+                      {/* <CardMedia
                         data-aos="slide-up"
-                        className="lazyload"
                         style={{
                           objectFit: "contain",
                         }}
@@ -93,8 +92,24 @@ const Skills = () => {
                         height="100"
                         image={item.img}
                         alt="skills"
-                      />
-
+                      /> */}
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Image
+                          data-aos="slide-up"
+                          width={110}
+                          objectFit="contain"
+                          height={110}
+                          src={item.img}
+                          quality={90}
+                          alt="skills"
+                        />
+                      </div>
                       <Typography
                         data-aos="slide-up"
                         className="bodyFont"
