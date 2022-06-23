@@ -55,10 +55,17 @@ const Home = () => {
         <meta name="robots" content="index, nofollow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-
-        <meta property="og:image" content="/favicon.webp" />
-
-        <meta property="og:site_name" content="My Homepage" />
+        <meta name="og:title" content="Rishabh Ajay's portfolio website" />
+        <meta
+          name="og:description"
+          content="A portfolio website created with Next.js and Material-UI"
+        />
+        <meta property="og:image" content="/android-chrome-192x192.png" />
+        <meta
+          property="og:url"
+          content="https://portfolio-rishabhajay.vercel.app/"
+        />
+        <meta property="og:site_name" content="Rishabh Ajay's Portfolio" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
