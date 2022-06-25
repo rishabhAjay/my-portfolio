@@ -1,6 +1,6 @@
 .bodyFont {
-  font-family: "Balsamiq Sans", cursive;
-  font-weight: 400;
+  font-family: "Balsamiq Sans", cursive !important;
+  font-weight: 400 !important;
 }
 .headings {
   color: white !important;
