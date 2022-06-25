@@ -1,8 +1,4 @@
-import "@fontsource/balsamiq-sans";
-import "@fontsource/comfortaa";
 import "aos/dist/aos.css";
-import "animate.css/animate.min.css";
-import "lazysizes";
 
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
@@ -41,71 +37,8 @@ const Home = () => {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rishabh Ajay | Portfolio</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="robots" content="index, nofollow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="English" />
-        <meta name="title" content="Rishabh Ajay's portfolio website" />
-        <meta
-          name="description"
-          content="A portfolio website created with Next.js and Material-UI"
-        />
-        <meta
-          name="keywords"
-          content="portfolio, next.js, react, material-ui, engineering, software, website, web development"
-        />
-        <meta
-          property="url"
-          content="https://portfolio-rishabhajay.vercel.app/"
-        />
-
-        <meta itemProp="name" content="Rishabh Ajay's portfolio website" />
-        <meta
-          itemProp="description"
-          content="A portfolio website created with Next.js and Material-UI"
-        />
-        <meta itemProp="image" content="/featured-image.jpg" />
-
-        <meta
-          property="og:url"
-          content="https://portfolio-rishabhajay.vercel.app"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Rishabh Ajay's portfolio website" />
-        <meta
-          property="og:description"
-          content="A portfolio website created with Next.js and Material-UI"
-        />
-        <meta property="og:image" content="/featured-image.jpg" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Rishabh Ajay's portfolio website" />
-        <meta
-          name="twitter:description"
-          content="A portfolio website created with Next.js and Material-UI"
-        />
-        <meta name="twitter:image" content="/featured-image.jpg" />
-
-        <meta property="og:site_name" content="Rishabh Ajay's Portfolio" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       {loading ? (

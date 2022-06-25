@@ -19,20 +19,11 @@ const ProjectCard = ({ item }) => {
           color: "white",
         }}
       >
-        {/* <CardMedia
-          className="lazyload"
-          component="img"
-          alt="Project Image"
-          style={{ height: 150 }}
-          image={item.image}
-        /> */}
         <Image
           alt="Project Image"
-          // style={{ height: 150 }}
           height={600}
           width={1000}
           quality={100}
-          // image={item.image}
           objectFit="cover"
           src={item.image}
           layout="responsive"

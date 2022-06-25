@@ -2,12 +2,10 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
-import "animate.css/animate.min.css";
-
+import landingImage5 from "../public/landingImage5.webp";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
 
@@ -17,21 +15,28 @@ const Landing = () => {
       <div className={styles.landing}>
         <Image
           alt="landing image"
-          src="/landingImage5.webp"
+          src={landingImage5}
           id="landing"
           layout="fill"
           objectFit="cover"
           quality={100}
+          loading="eager"
+          priority={true}
         />
       </div>
 
       <div className={styles.avatar}>
-        <Avatar
-          className="lazyload"
-          sx={{ width: "11rem", height: "auto" }}
-          alt="Rishabh Ajay"
-          src="/avatar.webp"
-        />
+        <Avatar sx={{ width: { xs: 190, sm: 190, md: 200 }, height: "auto" }}>
+          <Image
+            alt="Rishabh Ajay"
+            src="/avatar.webp"
+            width={200}
+            height={200}
+            objectFit="cover"
+            loading="eager"
+            priority={true}
+          />
+        </Avatar>
       </div>
 
       <Typography variant="h3" className={styles.landingText}>
