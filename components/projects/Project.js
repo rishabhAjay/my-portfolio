@@ -9,6 +9,15 @@ const Project = (props) => {
   const [items, setItems] = useState([
     {
       id: 1,
+      project: "Chat App",
+      description:
+        "A real-time private chatting app that features a complete auth flow and a modern UI with theme toggle. ",
+      techs: ["React.js", "Socket.io", "Firebase", "Material-UI"],
+      link: "https://github.com/rishabhAjay/chatApp",
+      image: "/chatapp.webp",
+    },
+    {
+      id: 2,
       project: "Location Tracker",
       description:
         "A location tracker based on JavaScript's Geolocation API that takes touch sensing as an input. ",
@@ -17,7 +26,7 @@ const Project = (props) => {
       image: "/iot3.webp",
     },
     {
-      id: 2,
+      id: 3,
       project: "E-Commerce Website",
       description:
         "An E-commerce website primarily involving the Frontend design and functionalities. Has a Login/Register system. ",
@@ -26,7 +35,7 @@ const Project = (props) => {
       image: "/cart.webp",
     },
     {
-      id: 3,
+      id: 4,
       project: "Typing Game ",
       description:
         "A typing game built with the MERN stack. Uses JWT for Authentication. ",
@@ -35,7 +44,7 @@ const Project = (props) => {
       image: "/Game.webp",
     },
     {
-      id: 4,
+      id: 5,
       project: "Lights Off ",
       description:
         "A Discord Bot that inverts the colors or grayscales an image. Useful for light-mode images. ",
@@ -44,7 +53,7 @@ const Project = (props) => {
       image: "/LightsOff.webp",
     },
     {
-      id: 5,
+      id: 6,
       project: "Patient Record System",
       description:
         "A CRUD application that allows clinic staff members to add, delete, update and view patient Details. ",
@@ -53,7 +62,7 @@ const Project = (props) => {
       image: "/registration.webp",
     },
     {
-      id: 6,
+      id: 7,
       project: "Circular Buffer Simulation ",
       description:
         "A computer graphics project that simulates the working of a Circular Queue. ",
