@@ -51,12 +51,11 @@ const ContactMe = () => {
         }}
         id="contact"
       >
-        <Typography data-aos="slide-up" variant="h4" className="headings">
+        <Typography variant="h4" className="headings">
           CONTACT ME
         </Typography>
 
         <div
-          data-aos="slide-up"
           style={{
             display: "flex",
             justifyContent: "center",
