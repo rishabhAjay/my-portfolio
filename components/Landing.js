@@ -5,7 +5,6 @@ import Stack from "@mui/material/Stack";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
-import landingImage5 from "../public/landingImage5.webp";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
 
@@ -15,11 +14,11 @@ const Landing = () => {
       <div className={styles.landing}>
         <Image
           alt="landing image"
-          src={landingImage5}
+          src={"/images/landingImage5.webp"}
           id="landing"
           layout="fill"
           objectFit="cover"
-          quality={100}
+          quality={90}
           loading="eager"
           priority={true}
         />

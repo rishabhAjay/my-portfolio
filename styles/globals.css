@@ -1,5 +1,17 @@
+/* balsamiq-sans-regular - latin */
+@font-face {
+  font-family: "Balsamiq Sans";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/balsamiq-sans-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/balsamiq-sans-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .bodyFont {
-  font-family: "Balsamiq Sans", cursive !important;
+  font-family: "Balsamiq Sans" !important;
   font-weight: 400 !important;
 }
 .headings {
@@ -7,7 +19,7 @@
   padding: 2rem 0 2rem 0 !important;
   margin-left: 40px !important;
   text-decoration: underline;
-  font-family: "Balsamiq Sans", cursive !important;
+  font-family: "Balsamiq Sans" !important;
   font-weight: 400 !important;
 }
 

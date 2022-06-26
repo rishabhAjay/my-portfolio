@@ -26,7 +26,7 @@ export default function Document() {
           itemProp="description"
           content="A portfolio website created with Next.js and Material-UI"
         />
-        <meta itemProp="image" content="/featured-image.jpg" />
+        <meta itemProp="image" content="/images/featured-image.jpg" />
 
         <meta
           property="og:url"
@@ -38,7 +38,7 @@ export default function Document() {
           property="og:description"
           content="A portfolio website created with Next.js and Material-UI"
         />
-        <meta property="og:image" content="/featured-image.jpg" />
+        <meta property="og:image" content="/images/featured-image.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Rishabh Ajay's portfolio website" />
@@ -46,34 +46,40 @@ export default function Document() {
           name="twitter:description"
           content="A portfolio website created with Next.js and Material-UI"
         />
-        <meta name="twitter:image" content="/featured-image.jpg" />
+        <meta name="twitter:image" content="/images/featured-image.jpg" />
 
         <meta property="og:site_name" content="Rishabh Ajay's Portfolio" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/images/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/images/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/images/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/fonts/comfortaa-v38-latin-700.woff2"
+          crossOrigin
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          as="font"
+          type="font/woff"
+          href="/fonts/comfortaa-v38-latin-700.woff"
+          crossOrigin
         />
       </Head>
       <body>
