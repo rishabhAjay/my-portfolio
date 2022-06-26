@@ -68,11 +68,11 @@ export default function Document() {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=optional"
+          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=optional"
+          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
           rel="stylesheet"
         />
       </Head>
