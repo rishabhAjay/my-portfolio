@@ -25,10 +25,10 @@ const Landing = () => {
       </div>
 
       <div className={styles.avatar}>
-        <Avatar sx={{ width: { xs: 190, sm: 190, md: 200 }, height: "auto" }}>
+        <Avatar sx={{ width: { xs: 180, sm: 180, md: 200 }, height: "auto" }}>
           <Image
             alt="Rishabh Ajay"
-            src="/avatar.webp"
+            src="/images/avatar.webp"
             width={200}
             height={200}
             objectFit="cover"
