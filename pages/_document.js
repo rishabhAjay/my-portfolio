@@ -72,14 +72,14 @@ export default function Document() {
           as="font"
           type="font/woff2"
           href="/fonts/comfortaa-v38-latin-700.woff2"
-          crossOrigin
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           as="font"
           type="font/woff"
           href="/fonts/comfortaa-v38-latin-700.woff"
-          crossOrigin
+          crossOrigin="anonymous"
         />
       </Head>
       <body>
