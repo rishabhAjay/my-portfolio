@@ -67,6 +67,7 @@ export default function Document() {
           href="/images/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="preload" as="image" href="/images/landingImage5.webp" crossOrigin="anonymous"/>
         <link
           rel="preload"
           as="font"
