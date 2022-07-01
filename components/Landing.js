@@ -7,25 +7,19 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
-import { useState } from "react";
-import {
-  avatarImageUri,
-  landingImageUri,
-  landingImageBlurUri,
-} from "./imageStrings";
+import { avatarImageUri, landingImageUri } from "./imageStrings";
 const Landing = () => {
-  const [loading, setLoading] = useState(true);
   return (
     <>
       <div className={styles.landing}>
         <Image
           alt="landing image"
-          src={loading ? landingImageBlurUri : landingImageUri}
+          src={landingImageUri}
           id="landing"
           layout="fill"
           objectFit="cover"
-          quality={70}
-          priority
+          quality={80}
+          loading="eager"
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
