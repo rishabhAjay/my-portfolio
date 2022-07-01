@@ -20,7 +20,6 @@ const Landing = () => {
           objectFit="cover"
           quality={80}
           loading="eager"
-          onLoadingComplete={() => setLoading(false)}
         />
       </div>
 
