@@ -7,20 +7,26 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import Typical from "react-typical";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
-
+import { useState } from "react";
+import {
+  avatarImageUri,
+  landingImageUri,
+  landingImageBlurUri,
+} from "./imageStrings";
 const Landing = () => {
+  const [loading, setLoading] = useState(true);
   return (
     <>
       <div className={styles.landing}>
         <Image
           alt="landing image"
-          src={"/images/landingImage5.webp"}
+          src={loading ? landingImageBlurUri : landingImageUri}
           id="landing"
           layout="fill"
           objectFit="cover"
-          quality={90}
-          loading="eager"
-          priority={true}
+          quality={70}
+          priority
+          onLoadingComplete={() => setLoading(false)}
         />
       </div>
 
@@ -28,12 +34,10 @@ const Landing = () => {
         <Avatar sx={{ width: { xs: 180, sm: 180, md: 200 }, height: "auto" }}>
           <Image
             alt="Rishabh Ajay"
-            src="/images/avatar.webp"
+            src={avatarImageUri}
             width={200}
             height={200}
-            objectFit="cover"
             loading="eager"
-            priority={true}
           />
         </Avatar>
       </div>

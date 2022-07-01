@@ -19,10 +19,6 @@
   z-index: -1 !important;
 }
 
-.landingChild {
-  object-fit: cover;
-}
-
 .landingText,
 .landingTextSec {
   color: #ffffff;
