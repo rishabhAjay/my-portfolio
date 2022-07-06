@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
+import { landingImageUri } from "../components/imageStrings";
 export default function Document() {
   return (
     <Html>
@@ -67,7 +67,6 @@ export default function Document() {
           href="/images/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="preload" as="image" href="/images/landingImage5.webp" crossOrigin="anonymous"/>
         <link
           rel="preload"
           as="font"
@@ -80,6 +79,20 @@ export default function Document() {
           as="font"
           type="font/woff"
           href="/fonts/comfortaa-v38-latin-700.woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          href="/fonts/balsamiq-sans-v10-latin-regular.woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff"
+          href="/fonts/balsamiq-sans-v10-latin-regular.woff"
           crossOrigin="anonymous"
         />
       </Head>
