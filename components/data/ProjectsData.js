@@ -41,7 +41,7 @@ const ProjectsData = [
     description:
       "A Discord Bot that inverts the colors or grayscales an image. Useful for light-mode images. ",
     techs: ["Discord.js", "Node.js", "Puppeteer"],
-    link: "https://github.com/rishabhAjay/lightsoff",
+    link: "https://github.com/rishabhAjay/lights-off",
     image: "/images/LightsOff.webp",
   },
   {
