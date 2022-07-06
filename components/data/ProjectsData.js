@@ -40,7 +40,7 @@ const ProjectsData = [
     project: "Lights Off ",
     description:
       "A Discord Bot that inverts the colors or grayscales an image. Useful for light-mode images. ",
-    techs: ["Discord.js", "Node.js", "Puppeteer"],
+    techs: ["Discord.js", "Node.js"],
     link: "https://github.com/rishabhAjay/lights-off",
     image: "/images/LightsOff.webp",
   },
