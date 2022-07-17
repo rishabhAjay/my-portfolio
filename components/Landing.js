@@ -55,7 +55,7 @@ const Landing = () => {
       >
         <a
           style={{ textDecoration: "none" }}
-          href="https://drive.google.com/file/d/1hyvC56DvpIL1UvygISgpo2lK5wNXkTny/view?usp=sharing"
+          href="https://drive.google.com/file/d/1u7f8iFwfi7w-RyZXop4K7Iv6TTYX-dcg/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
         >
