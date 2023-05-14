@@ -24,12 +24,18 @@ const Landing = () => {
       </div>
 
       <div className={styles.avatar}>
-        <Avatar sx={{ width: { xs: 180, sm: 180, md: 200 }, height: "auto" }}>
+        <Avatar
+          sx={{
+            width: { xs: 220, sm: 190, md: 220 },
+            height: "auto",
+            backgroundColor: "white",
+          }}
+        >
           <Image
             alt="Rishabh Ajay"
             src={avatarImageUri}
             width={200}
-            height={200}
+            height={220}
             loading="eager"
           />
         </Avatar>
@@ -55,7 +61,7 @@ const Landing = () => {
       >
         <a
           style={{ textDecoration: "none" }}
-          href="https://drive.google.com/file/d/1u7f8iFwfi7w-RyZXop4K7Iv6TTYX-dcg/view?usp=sharing"
+          href="https://drive.google.com/file/d/18Mg-vdxLv_1I_mgLcLTr2xzfvY-9S-DF/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
         >

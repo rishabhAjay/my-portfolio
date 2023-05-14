@@ -1,15 +1,15 @@
 const experience = [
   {
-    title: "Our Own English High School",
-    location: "Sharjah, UAE",
-    designation: "10th Grade",
-    date: "2015-2016",
+    title: "Spurtree Technologies",
+    location: "Bangalore, India",
+    designation: "Software Engineer",
+    date: "August 2022 - Present",
   },
   {
-    title: "Manasarowar Pushkarini Vidyashrama",
-    location: "Mysore, India",
-    designation: "12th Grade",
-    date: "2017-2018",
+    title: "Thinkerbell Labs",
+    location: "Remote, India",
+    designation: "Software Development Intern",
+    date: "Apr 2022 - June 2022",
   },
   {
     title: "Vidyavardhaka College of Engineering",
@@ -18,10 +18,16 @@ const experience = [
     date: "2018-2022",
   },
   {
-    title: "Thinkerbell Labs",
-    location: "Remote, India",
-    designation: "Software Development Intern",
-    date: "Apr 2022 - June 2022",
+    title: "Manasarowar Pushkarini Vidyashrama",
+    location: "Mysore, India",
+    designation: "12th Grade",
+    date: "2017-2018",
+  },
+  {
+    title: "Our Own English High School",
+    location: "Sharjah, UAE",
+    designation: "10th Grade",
+    date: "2015-2016",
   },
 ];
 

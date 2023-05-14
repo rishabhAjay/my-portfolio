@@ -1,8 +1,8 @@
 const skills = [
   {
-    img: "/images/mongodb.webp",
-    title: "MongoDB",
-    link: "https://www.mongodb.com/",
+    img: "/images/nodejs.webp",
+    title: "Node.js",
+    link: "https://expressjs.com/",
     id: 1,
   },
   {
@@ -24,9 +24,9 @@ const skills = [
     id: 4,
   },
   {
-    img: "/images/nodejs.webp",
-    title: "Node.js",
-    link: "https://expressjs.com/",
+    img: "/images/redux.webp",
+    title: "Redux",
+    link: "https://redux-toolkit.js.org/",
     id: 5,
   },
   {
@@ -48,9 +48,9 @@ const skills = [
     id: 8,
   },
   {
-    img: "/images/redux.webp",
-    title: "Redux",
-    link: "https://redux-toolkit.js.org/",
+    img: "/images/mongodb.webp",
+    title: "MongoDB",
+    link: "https://www.mongodb.com/",
     id: 9,
   },
   {
@@ -59,48 +59,71 @@ const skills = [
     link: "https://firebase.google.com/",
     id: 10,
   },
-
+  {
+    img: "/images/mysql.webp",
+    title: "MySQL",
+    link: "https://www.mysql.com/",
+    id: 11,
+  },
   {
     img: "/images/rest.webp",
     title: "REST API",
     link: "https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm",
-    id: 11,
+    id: 12,
   },
   {
     img: "/images/postman.webp",
     title: "Postman",
     link: "https://www.postman.com/",
-    id: 12,
+    id: 13,
   },
   {
     img: "/images/socketio.webp",
     title: "Socket.io",
     link: "https://socket.io/",
-    id: 13,
+    id: 14,
   },
   {
     img: "/images/html.webp",
     title: "HTML5",
     link: "https://www.w3schools.com/html/",
-    id: 14,
+    id: 15,
   },
   {
     img: "/images/css.webp",
     title: "CSS3",
     link: "https://www.w3schools.com/css/",
-    id: 15,
+    id: 16,
+  },
+  {
+    img: "/images/aws.webp",
+    title: "AWS",
+    link: "https://aws.amazon.com/console/",
+    id: 17,
+  },
+  {
+    img: "/images/serverless.webp",
+    title: "Serverless",
+    link: "https://www.serverless.com/",
+    id: 18,
+  },
+  {
+    img: "/images/jenkins.webp",
+    title: "Jenkins",
+    link: "https://www.jenkins.io/",
+    id: 19,
   },
   {
     img: "/images/linux.webp",
     title: "Linux",
     link: "https://www.linux.org/",
-    id: 16,
+    id: 20,
   },
   {
     img: "/images/python.webp",
     title: "Python",
     link: "https://www.python.org/",
-    id: 17,
+    id: 21,
   },
 ];
 
