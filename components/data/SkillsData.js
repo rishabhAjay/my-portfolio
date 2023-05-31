@@ -114,16 +114,22 @@ const skills = [
     id: 19,
   },
   {
+    img: "/images/k6.webp",
+    title: "K6 Load Testing",
+    link: "https://k6.io/",
+    id: 20,
+  },
+  {
     img: "/images/linux.webp",
     title: "Linux",
     link: "https://www.linux.org/",
-    id: 20,
+    id: 21,
   },
   {
     img: "/images/python.webp",
     title: "Python",
     link: "https://www.python.org/",
-    id: 21,
+    id: 22,
   },
 ];
 
