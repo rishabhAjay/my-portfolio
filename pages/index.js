@@ -49,7 +49,7 @@ const Home = () => {
           <ThemeProvider theme={theme}>
             <Navbar />
             <Landing />
-            {/* <Experience /> */}
+            <Experience />
             <Skills />
             <Project />
             <ContactMe />
