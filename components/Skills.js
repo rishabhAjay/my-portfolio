@@ -108,6 +108,7 @@ const Skills = () => {
                           src={item.img}
                           quality={90}
                           alt="skills"
+                          loading="lazy"
                         />
                       </div>
                       <Typography
