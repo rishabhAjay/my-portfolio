@@ -14,7 +14,7 @@ import Aos from "aos";
 import Spinner from "../components/layout/Spinner.js";
 import Navbar from "../components/layout/Navbar.js";
 import Landing from "../components/Landing.js";
-const Experience = dynamic("../components/Experience.js");
+import Experience from "../components/Experience.js";
 const Skills = dynamic(import("../components/Skills.js"));
 const Project = dynamic(import("../components/projects/Project.js"));
 const ContactMe = dynamic(import("../components/ContactMe"));
