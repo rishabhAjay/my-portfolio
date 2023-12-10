@@ -36,7 +36,6 @@ const Landing = () => {
             src={avatarImageUri}
             width={200}
             height={220}
-            loading="lazy"
           />
         </Avatar>
       </div>
