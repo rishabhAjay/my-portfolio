@@ -19,7 +19,7 @@ const Landing = () => {
           layout="fill"
           objectFit="cover"
           quality={80}
-          loading="eager"
+          loading="lazy"
         />
       </div>
 
@@ -36,7 +36,7 @@ const Landing = () => {
             src={avatarImageUri}
             width={200}
             height={220}
-            loading="eager"
+            loading="lazy"
           />
         </Avatar>
       </div>

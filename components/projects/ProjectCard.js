@@ -26,7 +26,7 @@ const ProjectCard = ({ item }) => {
           objectFit="cover"
           src={item.image}
           layout="responsive"
-          loading="eager"
+          loading="lazy"
         />
         <CardContent>
           <Typography
