@@ -2,21 +2,72 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Typography from "@mui/material/Typography";
 import ProjectsData from "../data/ProjectsData.js";
-const Carousel = dynamic(import("react-elastic-carousel"));
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Box, Button, Container, IconButton } from "@mui/material";
 const ProjectCard = dynamic(import("./ProjectCard.js"));
+import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+import styles from "../../styles/Projects.module.css";
+
+const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+  const {
+    carouselState: { currentSlide },
+  } = rest;
+  return (
+    <Box
+      sx={{
+        position: "absolute",
+        bottom: 100,
+        top: 180,
+        left: 0,
+        right: 0,
+      }}
+    >
+      <IconButton
+        className={`${styles["custom-left-arrow"]} ${
+          currentSlide === 0 ? "disable" : ""
+        }`}
+        onClick={previous}
+      >
+        <ArrowBackIosOutlinedIcon />
+      </IconButton>
+
+      <IconButton
+        className={`${styles["custom-right-arrow"]} ${
+          currentSlide === 0 ? "disable" : ""
+        }`}
+        onClick={next}
+      >
+        <ArrowForwardIosOutlinedIcon />
+      </IconButton>
+    </Box>
+  );
+};
 
 const Project = (props) => {
   const [items, setItems] = useState(ProjectsData);
 
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 1 },
-    { width: 850, itemsToShow: 2 },
-    { width: 1150, itemsToShow: 3 },
-    { width: 1450, itemsToShow: 3 },
-    { width: 1750, itemsToShow: 4 },
-  ];
+  const breakPoints = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <>
@@ -33,13 +84,25 @@ const Project = (props) => {
           PROJECTS
         </Typography>
 
-        <div data-aos="slide-up">
-          <Carousel breakPoints={breakPoints}>
+        <Box
+          sx={{
+            margin: "0 10% 0 10%",
+          }}
+          data-aos="slide-up"
+        >
+          <Carousel
+            arrows={false}
+            customButtonGroup={<ButtonGroup />}
+            responsive={breakPoints}
+            showDots={true}
+            renderButtonGroupOutside={true}
+            renderDotsOutside={true}
+          >
             {items.map((item, i) => (
               <ProjectCard key={item.id} item={item} />
             ))}
           </Carousel>
-        </div>
+        </Box>
       </div>
     </>
   );

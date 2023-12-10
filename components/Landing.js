@@ -4,7 +4,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DescriptionIcon from "@mui/icons-material/Description";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
 import { avatarImageUri, landingImageUri } from "./imageStrings";
@@ -45,11 +45,19 @@ const Landing = () => {
         I am Rishabh Ajay
       </Typography>
       <Typography variant="h4" className={styles.landingTextSec}>
-        A{" "}
-        <Typical
-          loop={Infinity}
-          steps={["Software Engineer", 2500, "Web Developer", 2500]}
-          wrapper="b"
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "A Software Engineer",
+            2000, // wait 1s before replacing "Mice" with "Hamsters"
+            "A Full-Stack Developer",
+            2000,
+            "A Cybersecurity Aficionado",
+            2000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
         />
       </Typography>
       <Stack

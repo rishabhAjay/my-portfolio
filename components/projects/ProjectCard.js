@@ -1,7 +1,6 @@
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import Image from "next/image";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import styles from "../../styles/Projects.module.css";
@@ -14,7 +13,7 @@ const ProjectCard = ({ item }) => {
     <>
       <Card
         sx={{
-          maxWidth: 300,
+          margin: "0 5% 0 5%",
           backgroundColor: "#807d7d",
           color: "white",
         }}
@@ -73,6 +72,7 @@ const ProjectCard = ({ item }) => {
           </a>
         </CardActions>
       </Card>
+      <br />
     </>
   );
 };

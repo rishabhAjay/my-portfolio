@@ -9,3 +9,32 @@
 .githubLink:hover {
   opacity: 0.6;
 }
+.custom-right-arrow {
+  margin-right: -40px;
+  color: black;
+  position: absolute !important;
+  right: 5px;
+  background-color: peachpuff;
+  border-radius: 100%;
+  z-index: 0;
+  padding: 10px;
+}
+.custom-right-arrow:hover {
+  opacity: 1;
+  color: white;
+}
+.custom-left-arrow {
+  margin-left: -40px;
+  color: black;
+  position: absolute !important;
+  background-color: peachpuff;
+  border-radius: 100%;
+  left: 5px;
+  z-index: 0;
+  padding: 10px;
+}
+.custom-left-arrow:hover {
+  opacity: 1;
+  background-color: transparent;
+  color: white;
+}
