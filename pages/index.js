@@ -24,16 +24,13 @@ const Project = dynamic(() => import("../components/projects/Project.js"), {
 const ContactMe = dynamic(() => import("../components/ContactMe"), {
   loading: () => <Spinner size={40} color="#c4c4c4" style={styles.loader} />,
 });
-const Footer = dynamic(() => import("../components/layout/Footer"), {
-  loading: () => <Spinner size={40} color="#c4c4c4" style={styles.loader} />,
-});
+import Footer from "../components/layout/Footer";
 import styles from "../styles/Spinner.module.css";
 
 const defaultValue = {
   showSkills: false,
   showProject: false,
   showContactMe: false,
-  showFooter: false,
 };
 
 const Home = () => {
@@ -60,11 +57,6 @@ const Home = () => {
       if (window.scrollY >= 1500 && window.scrollY < 2000) {
         setShown((prev) => {
           return { ...prev, showContactMe: true };
-        });
-      }
-      if (window.scrollY >= 2000) {
-        setShown((prev) => {
-          return { ...prev, showFooter: true };
         });
       }
     };
@@ -95,7 +87,7 @@ const Home = () => {
             {shown.showSkills && <Skills />}
             {shown.showProject && <Project />}
             {shown.showContactMe && <ContactMe />}
-            {shown.showFooter && <Footer />}
+            <Footer />
           </ThemeProvider>
         </>
       )}
