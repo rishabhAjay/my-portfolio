@@ -5,8 +5,8 @@ import ProjectsData from "../data/ProjectsData.js";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Box, Button, Container, IconButton } from "@mui/material";
-const ProjectCard = dynamic(import("./ProjectCard.js"));
+import { Box, IconButton } from "@mui/material";
+import ProjectCard from "./ProjectCard.js";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import styles from "../../styles/Projects.module.css";
