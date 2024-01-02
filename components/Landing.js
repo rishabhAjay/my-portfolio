@@ -19,7 +19,7 @@ const Landing = () => {
           layout="fill"
           objectFit="cover"
           quality={80}
-          priority
+          loading="eager"
         />
       </div>
 
