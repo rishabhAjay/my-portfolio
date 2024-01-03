@@ -79,8 +79,8 @@ const Home = () => {
       ) : (
         <>
           <ThemeProvider theme={theme}>
-            <Navbar />
-            <Landing />
+            <Navbar setShown={setShown} />
+            <Landing setShown={setShown} />
             <Experience />
 
             {shown.showSkills && <Skills />}

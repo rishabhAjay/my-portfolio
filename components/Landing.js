@@ -7,8 +7,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import { TypeAnimation } from "react-type-animation";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { avatarImageUri, landingImageUri } from "./imageStrings";
-const Landing = () => {
+const Landing = ({ setShown }) => {
+  const router = useRouter();
   return (
     <>
       <div className={styles.landing}>
@@ -89,6 +91,14 @@ const Landing = () => {
             size="small"
             className={styles.buttons}
             style={{ backgroundColor: "#6b0b0b" }}
+            onClick={() => {
+              setShown((prev) => {
+                return { ...prev, showContactMe: true };
+              });
+              setTimeout(() => {
+                router.push("/#contact");
+              }, 100);
+            }}
           >
             Contact Me
           </Button>

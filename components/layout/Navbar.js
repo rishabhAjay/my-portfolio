@@ -4,8 +4,10 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import styles from "../../styles/Navbar.module.css";
+import { useRouter } from "next/navigation";
+const Navbar = ({ setShown }) => {
+  const router = useRouter();
 
-const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="absolute" className={styles.navbarStyles}>
@@ -20,15 +22,32 @@ const Navbar = () => {
             </a>
           </Typography>
 
-          <Button color="inherit">
-            <a className={styles.navlinks} href="#skills">
-              Skills
-            </a>
+          <Button
+            color="inherit"
+            onClick={() => {
+              setShown((prev) => {
+                return { ...prev, showSkills: true };
+              });
+              setTimeout(() => {
+                router.push("/#skills");
+              }, 100);
+            }}
+          >
+            <a className={styles.navlinks}>Skills</a>
           </Button>
-          <Button color="inherit">
-            <a className={styles.navlinks} href="#projects">
-              projects
-            </a>
+          <Button
+            color="inherit"
+            onClick={() => {
+              setShown((prev) => {
+                const hello = { ...prev, showProject: true };
+                return hello;
+              });
+              setTimeout(() => {
+                router.push("/#projects");
+              }, 100);
+            }}
+          >
+            <a className={styles.navlinks}>projects</a>
           </Button>
         </Toolbar>
       </AppBar>
