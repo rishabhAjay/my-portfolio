@@ -97,7 +97,7 @@ const Landing = ({ setShown }) => {
               });
               setTimeout(() => {
                 router.push("/#contact");
-              }, 100);
+              }, 400);
             }}
           >
             Contact Me

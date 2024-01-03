@@ -30,7 +30,7 @@ const Navbar = ({ setShown }) => {
               });
               setTimeout(() => {
                 router.push("/#skills");
-              }, 100);
+              }, 400);
             }}
           >
             <a className={styles.navlinks}>Skills</a>
@@ -44,7 +44,7 @@ const Navbar = ({ setShown }) => {
               });
               setTimeout(() => {
                 router.push("/#projects");
-              }, 100);
+              }, 400);
             }}
           >
             <a className={styles.navlinks}>projects</a>
