@@ -4,7 +4,6 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import CssBaseline from "@mui/material/CssBaseline";
-import HashLoader from "react-spinners/HashLoader";
 import {
   createTheme,
   ThemeProvider,
