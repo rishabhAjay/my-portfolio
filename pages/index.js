@@ -15,13 +15,13 @@ import Navbar from "../components/layout/Navbar.js";
 import Landing from "../components/Landing.js";
 import Experience from "../components/Experience.js";
 const Skills = dynamic(() => import("../components/Skills.js"), {
-  loading: () => <Spinner size={40} color="#c4c4c4" style={styles.loader} />,
+  loading: () => <Spinner size={40} color="white" style={styles.loader} />,
 });
 const Project = dynamic(() => import("../components/projects/Project.js"), {
-  loading: () => <Spinner size={40} color="#c4c4c4" style={styles.loader} />,
+  loading: () => <Spinner size={40} color="white" style={styles.loader} />,
 });
 const ContactMe = dynamic(() => import("../components/ContactMe"), {
-  loading: () => <Spinner size={40} color="#c4c4c4" style={styles.loader} />,
+  loading: () => <Spinner size={40} color="white" style={styles.loader} />,
 });
 import Footer from "../components/layout/Footer";
 import styles from "../styles/Spinner.module.css";

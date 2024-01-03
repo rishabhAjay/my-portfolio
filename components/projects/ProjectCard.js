@@ -4,15 +4,22 @@ import Image from "next/image";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import styles from "../../styles/Projects.module.css";
-
+import spinnerStyles from "../../styles/Spinner.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import Chip from "@mui/material/Chip";
+import Spinner from "../layout/Spinner";
+import { useState } from "react";
 const ProjectCard = ({ item }) => {
+  const [loading, setLoading] = useState(true);
   return (
     <>
+      {loading && (
+        <Spinner size={40} color="white" style={spinnerStyles.imageLoader} />
+      )}
       <Card
         sx={{
+          visibility: loading && "hidden",
           margin: "0 5% 0 5%",
           backgroundColor: "#807d7d",
           color: "white",
@@ -27,7 +34,9 @@ const ProjectCard = ({ item }) => {
           src={item.image}
           layout="responsive"
           loading="lazy"
+          onLoad={() => setLoading(false)}
         />
+
         <CardContent>
           <Typography
             className="bodyFont"

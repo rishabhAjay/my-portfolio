@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
@@ -9,10 +9,12 @@ import Box from "@mui/material/Box";
 import usePagination from "./functions/Pagination.js";
 import skills from "./data/SkillsData.js";
 import Image from "next/image.js";
+import Spinner from "./layout/Spinner.js";
+import spinnerStyles from "../styles/Spinner.module.css";
 
 const Skills = () => {
   const [itemData, setItemData] = useState(skills);
-
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const PER_PAGE = 6;
 
@@ -23,6 +25,9 @@ const Skills = () => {
     Data.jump(p);
   };
 
+  useEffect(() => {
+    setLoading(true);
+  }, [page]);
   return (
     <>
       <div
@@ -65,6 +70,13 @@ const Skills = () => {
           >
             {Data.currentData().map((item, i) => (
               <Grid key={item.id} item xs={12} md={4} sm={6}>
+                {loading && (
+                  <Spinner
+                    size={40}
+                    color="white"
+                    style={spinnerStyles.imageLoader}
+                  />
+                )}
                 <Card
                   sx={{
                     maxWidth: "100%",
@@ -72,6 +84,7 @@ const Skills = () => {
                   style={{
                     backgroundColor: "inherit",
                     boxShadow: "none",
+                    visibility: loading && "hidden",
                   }}
                 >
                   <CardActionArea className="cardAction">
@@ -83,16 +96,6 @@ const Skills = () => {
                       target="_blank"
                       href={item.link}
                     >
-                      {/* <CardMedia
-                        data-aos="slide-up"
-                        style={{
-                          objectFit: "contain",
-                        }}
-                        component="img"
-                        height="100"
-                        image={item.img}
-                        alt="skills"
-                      /> */}
                       <div
                         style={{
                           display: "flex",
@@ -109,13 +112,17 @@ const Skills = () => {
                           quality={90}
                           alt="skills"
                           loading="lazy"
+                          onLoad={() => setLoading(false)}
                         />
                       </div>
                       <Typography
                         data-aos="slide-up"
                         className="bodyFont"
                         variant="h6"
-                        style={{ textAlign: "center", color: "white" }}
+                        style={{
+                          textAlign: "center",
+                          color: "white",
+                        }}
                       >
                         {item.title}
                       </Typography>
